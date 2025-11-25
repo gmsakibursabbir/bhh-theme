@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+@plugin "@tailwindcss/typography";
+
+/* Custom styles */
+@theme {
+  --font-primary: "Montserrat", sans-serif;
+
+  --color-primary: #237017;
+  --color-secondary: #72c865;
+  --color-yellow: #f0b53f;
+  --color-accent: #ffdc46;
+  --color-green: #279a64;
+  --color-dark: #002115;
+  --color-light-gray: #fbfbfb;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: white;
+}
+
+.lemon-green-gradient {
+  background: #72c865;
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(114, 200, 101, 1) 0%,
+    rgba(35, 112, 23, 1) 80%
+  );
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(114, 200, 101, 1) 0%,
+    rgba(35, 112, 23, 1) 80%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(114, 200, 101, 1) 0%,
+    rgba(35, 112, 23, 1) 80%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#72C865", endColorstr="#237017", GradientType=0);
+}
+
+.lemon-green-gradient-two {
+  background: #a6e843;
+  background: -webkit-linear-gradient(
+    215deg,
+    rgba(166, 232, 67, 1) 49%,
+    rgba(53, 147, 39, 1) 68%
+  );
+  background: -moz-linear-gradient(
+    215deg,
+    rgba(166, 232, 67, 1) 49%,
+    rgba(53, 147, 39, 1) 68%
+  );
+  background: linear-gradient(
+    215deg,
+    rgba(166, 232, 67, 1) 49%,
+    rgba(53, 147, 39, 1) 68%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#A6E843", endColorstr="#359327", GradientType=0);
+}
+
+.ylg-gradient {
+  background: linear-gradient(
+    180deg,
+    #c0f04a 0%,
+    #8fd834 35%,
+    #4ea626 70%,
+    #1f7e22 100%
+  );
+}
+.ty-gradient {
+  background: linear-gradient(
+    45deg,
+    #359327 0%,
+    #359427 30%,
+    #5fb231 55%,
+    #76c437 75%,
+    #a6e843 100%
+  );
+}
+
+@layer utilities {
+  .animate-ticker {
+    animation: ticker 20s linear infinite;
+  }
+
+  @keyframes ticker {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.herobg-one {
+  background-image: url("../assets/media/hero-xl-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.herobg-two {
+  background-image: url("../assets/media/hero-xl-2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.herobg-three {
+  background-image: url("../assets/media/hero-xl-3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.herobg-four {
+  background-image: url("../assets/media/hero-xl-4.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.herobg-five {
+  background-image: url("../assets/media/hero-xl-5.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .herobg-one,
+  .herobg-two,
+  .herobg-three,
+  .herobg-four,
+  .herobg-five {
+    background: linear-gradient(
+      135deg,
+      #1d8a2e 0%,
+      #219532 25%,
+      #43b33b 60%,
+      #a1e64b 100%
+    );
+  }
+}
+
+/* Services Slider Pagination Customization */
+#services-slider .splide__pagination {
+  bottom: -40px !important; /* Positioned 20px from bottom as requested */
+  padding: 0;
+}
+
+#services-slider .splide__pagination__page {
+  background: #6ea466; /* Inactive color */
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+#services-slider .splide__pagination__page.is-active {
+  background: var(--color-primary); /* Active color (Dark Green) */
+  transform: scale(1.2);
+}
+
+/* Force opacity for custom arrows and remove default button background */
+#services-slider .splide__arrow,
+#blog-carousel .splide__arrow {
+  opacity: 1 !important;
+  background: transparent !important;
+}
