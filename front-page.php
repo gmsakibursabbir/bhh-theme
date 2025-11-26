@@ -270,7 +270,6 @@ get_header(); ?>
 
     </div>
   </section>
-
   <!-- work -->
   <section class="pt-[46px] pb-[78px] lg:pt-[98px] lg:pb-[100px]">
     <div class="w-full lg:max-w-[1444px] lg:px-0 px-[25px] mx-auto">
@@ -521,7 +520,7 @@ get_header(); ?>
                     </p>
                   </div>
                   <div class="mt-auto pt-4">
-                    <a href="#"
+                    <a href="/business-mobile"
                       class="bg-accent text-dark text-base font-extrabold leading-none inline-flex flex-row justify-center items-center gap-[10px] min-h-[48px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white hover:scale-105 transform">
                       <span>Get started</span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" fill="none" viewBox="0 0 12 14"
@@ -848,7 +847,6 @@ get_header(); ?>
   </section>
 
   <!-- newsletter -->
-
   <section class="pt-[64px] pb-[32px] lg:pt-[67px] lg:pb-[85px]">
     <div class="w-full lg:max-w-[1378px] lg:px-0 px-[25px] mx-auto">
       <div class="mb-[24px] lg:mb-[40px]">
@@ -901,7 +899,8 @@ get_header(); ?>
         </div>
 
       </form>
-      <p class="text-sm lg:text-base text-dark font-semibold mt-[18px] max-w-[350px] lg:max-w-full">By signing up you are agreeing to receive emails
+      <p class="text-sm lg:text-base text-dark font-semibold mt-[18px] max-w-[350px] lg:max-w-full">By signing up you
+        are agreeing to receive emails
         from The
         Business Hub, you can unsubscribe at any time.</p>
 

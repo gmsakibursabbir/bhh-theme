@@ -358,18 +358,18 @@ get_header(); ?>
             <!-- bottom 2 -->
             <div class="w-full lg:max-w-[1155px] mx-auto px-5 lg:px-0 block lg:hidden">
                 <h3
-                    class="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-secondary mx-auto text-center leading-tight mb-[34px]">
-                    Choose fromthe leading networks</h3>
+                    class="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-secondary mx-auto text-center leading-tight mb-[34px] max-w-[378px]">
+                    Choose from the leading networks</h3>
 
-                <ul class="flex flex-row justify-center gap-4">
+                <ul class="flex flex-row justify-center gap-[30px]">
                     <li><img src="<?php echo esc_url(get_theme_file_uri('assets/media/Vodafone.svg')); ?>"
-                            alt="vodafone" class="w-[37px] h-[37px] "></li>
+                            alt="vodafone" class="min-w-[38px] min-h-[38px] "></li>
                     <li><img src="<?php echo esc_url(get_theme_file_uri('assets/media/o2.svg')); ?>" alt="o2"
-                            class="w-[37px] h-[37px] "></li>
+                            class="min-w-[38px] min-h-[38px] "></li>
                     <li><img src="<?php echo esc_url(get_theme_file_uri('assets/media/three.svg')); ?>" alt="three"
-                            class="w-[37px] h-[37px] "></li>
+                            class="min-w-[38px] min-h-[38px] "></li>
                     <li><img src="<?php echo esc_url(get_theme_file_uri('assets/media/ee.svg')); ?>" alt="ee"
-                            class="w-[37px] h-[37px] "></li>
+                            class="min-w-[38px] min-h-[38px] "></li>
                 </ul>
             </div>
         </div>
@@ -379,14 +379,14 @@ get_header(); ?>
     <!-- support  -->
     <section class="ylg-gradient pt-[64px] pb-[59px] lg:pt-[76px] lg:pb-[63px]">
         <div
-            class="w-full lg:max-w-[1444px] px-[25px] mx-auto flex flex-col lg:flex-row justify-between items-center gap-[47px] lg:gap-[68px]">
+            class="w-full lg:max-w-[1444px] px-[25px] mx-auto flex flex-col lg:flex-row justify-between items-center gap-[50px] lg:gap-[68px]">
             <div class="w-full lg:w-1/2">
                 <img src="<?php echo esc_url(get_theme_file_uri('assets/media/mobile-support.png')); ?>"
                     alt="about image" class="w-full h-full" />
             </div>
             <div class="w-full lg:w-1/2 text-center lg:text-left">
                 <h2
-                    class="text-[28px] lg:text-[34px] xl:text-[40px] font-extrabold text-white leading-tight pt-[15px] pb-[30px] lg:pb-[22px]">
+                    class="text-[28px] lg:text-[34px] xl:text-[40px] font-extrabold text-white leading-tight pb-[30px] lg:pb-[22px]">
                     Mobile support services
                 </h2>
                 <div class="max-w-[674px]">
@@ -425,7 +425,7 @@ get_header(); ?>
                 <h2
                     class="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-secondary mx-auto text-center leading-none py-4">
                     Keep your business communicating</h2>
-                <p class="text-base text-dark mx-auto text-center font-semibold">From the latest handsets to the best
+                <p class="text-base text-dark mx-auto text-center font-semibold max-w-[291px] lg:max-w-full">From the latest handsets to the best
                     contracts for your business, we are here to help.</p>
             </div>
 

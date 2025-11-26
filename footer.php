@@ -54,10 +54,13 @@
       </div>
       <div class="w-1/2 lg:w-1/5">
         <ul class="flex flex-col gap-y-4 lg:gap-y-8 text-white font-extrabold text-base ">
-          <li><a href="#" class="hover:text-[#FFDC46] transition-all ease-in-out duration-300">Terms & Conditions</a>
+          <li><a href="/terms-conditions" class="hover:text-[#FFDC46] transition-all ease-in-out duration-300">Terms &
+              Conditions</a>
           </li>
-          <li><a href="#" class="hover:text-[#FFDC46] transition-all ease-in-out duration-300">Privacy Policy</a></li>
-          <li><a href="#" class="hover:text-[#FFDC46] transition-all ease-in-out duration-300">Privacy Policy</a></li>
+          <li><a href="/privacy-policy" class="hover:text-[#FFDC46] transition-all ease-in-out duration-300">Privacy
+              Policy</a></li>
+          <li><a href="/cookie-policy" class="hover:text-[#FFDC46] transition-all ease-in-out duration-300">Cookie
+              Policy</a></li>
         </ul>
       </div>
 
@@ -65,7 +68,8 @@
     </div>
     <div class="pt-[68px] lg:pt-[34px] ">
       <p class="text-xs font-extrabold text-white max-w-[377px] lg:max-w-[600px] leading-5">&copy; The <?php bloginfo('name'); ?> <?php echo date('Y'); ?> . All Rights Reserved.</p>
-      <p class="text-xs font-extrabold text-white max-w-[377px] lg:max-w-[600px] leading-5">Registered office: Building 6000, Langstone Technology
+      <p class="text-xs font-extrabold text-white max-w-[377px] lg:max-w-[600px] leading-5">Registered office: Building
+        6000, Langstone Technology
         Park, Langstone Road, Havant PO9 1SA
         Registered in England and Wales, Company No. 16093355</p>
     </div>
