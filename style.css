@@ -1,11 +1,21 @@
 /*
-  Theme Name: Business Hub Theme
-  Author: Manik MT
-  Author URI: https://manikmt.com/
-  Version: 1.1.5
-  Description: A modern business WordPress theme built with Tailwind CSS.
+Theme Name: Business Hub Theme
+Theme URI: https://github.com/gmsakibursabbir/bhh-theme
+Author: Manik MT
+Author URI: https://manikmt.com/
+Description: A modern, premium WordPress theme designed for business hubs and corporate websites. Built with Tailwind CSS v4, featuring gradient designs, smooth animations with Lenis, and a comprehensive multi-step quote form. Includes custom templates for privacy policy, terms & conditions, cookie policy, and optimized archive/search pages.
+Version: 1.1.6
+Requires at least: 6.0
+Tested up to: 6.4
+Requires PHP: 7.4
+License: Proprietary
+License URI: All Rights Reserved.
+Text Domain: business-hub-theme
+
+Business Hub Theme, Copyright 2025 Manik MT & The Business Hub
+All Rights Reserved. This theme is proprietary software created for The Business Hub.
+
+This file only exists for WordPress theme recognition.
+All actual CSS is compiled from src/index.css to build/index.css using Tailwind CSS v4.
+WordPress does not load this file on the front-end.
 */
-
-/* This file only exists for the sake of WordPress recognizing our theme / theme name etc... */
-
-/* We do not include CSS here and also WordPress will not load this file on the front-end */

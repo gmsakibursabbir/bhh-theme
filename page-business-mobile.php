@@ -361,15 +361,15 @@ get_header(); ?>
                     class="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-secondary mx-auto text-center leading-tight mb-[34px] max-w-[378px]">
                     Choose from the leading networks</h3>
 
-                <ul class="flex flex-row justify-center gap-[30px]">
+                <ul class="flex flex-row justify-center gap-[20px]">
                     <li><img src="<?php echo esc_url(get_theme_file_uri('assets/media/Vodafone.svg')); ?>"
-                            alt="vodafone" class="min-w-[38px] min-h-[38px] "></li>
+                            alt="vodafone" class="min-w-[37px] min-h-[37px] "></li>
                     <li><img src="<?php echo esc_url(get_theme_file_uri('assets/media/o2.svg')); ?>" alt="o2"
-                            class="min-w-[38px] min-h-[38px] "></li>
+                            class="min-w-[37px] min-h-[37px] "></li>
                     <li><img src="<?php echo esc_url(get_theme_file_uri('assets/media/three.svg')); ?>" alt="three"
-                            class="min-w-[38px] min-h-[38px] "></li>
+                            class="min-w-[37px] min-h-[37px] "></li>
                     <li><img src="<?php echo esc_url(get_theme_file_uri('assets/media/ee.svg')); ?>" alt="ee"
-                            class="min-w-[38px] min-h-[38px] "></li>
+                            class="min-w-[37px] min-h-[37px] "></li>
                 </ul>
             </div>
         </div>
