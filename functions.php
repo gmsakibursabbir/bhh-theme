@@ -50,7 +50,7 @@ function bh_newsletter_signup_handler()
     }
 
     // Destination
-    $to = 'ostinevan@gmail.com'; // change if needed
+    $to = 'info@manikmt.com'; // change if needed
 
     // Combine full name for subject
     $fullName = trim($name . ' ' . $lastname);
@@ -171,7 +171,7 @@ function bh_quote_form_handler()
     $phone = sanitize_text_field($_POST['contact_number'] ?? '');
 
     // 3. Prepare Email
-    $to = 'ostinevan@gmail.com'; // Or get_option('admin_email');
+    $to = 'info@manikmt.com'; // Or get_option('admin_email');
     $subject = 'New Quote Request from ' . $biz_name;
 
     $message = "<h2>New Quote Request</h2>";
@@ -240,7 +240,7 @@ function bh_handle_quote_submission($request)
     }
 
     // 3. Prepare Email
-    $to = 'ostinevan@gmail.com'; // Same as newsletter form
+    $to = 'info@manikmt.com'; // Same as newsletter form
     $subject = "New Quote Request from $firstName $lastName";
 
     $message = "New Quote Request Details:\n\n";
