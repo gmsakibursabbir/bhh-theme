@@ -5,6 +5,12 @@ function boilerplate_load_assets()
     $script_asset = include(get_theme_file_path('/build/index.asset.php'));
     wp_enqueue_script('ourmainjs', get_theme_file_uri('/build/index.js'), $script_asset['dependencies'], $script_asset['version'], true);
     wp_enqueue_style('ourmaincss', get_theme_file_uri('/build/index.css'));
+
+    // Localize script to expose REST API nonce
+    wp_localize_script('ourmainjs', 'wpApiSettings', array(
+        'root' => esc_url_raw(rest_url()),
+        'nonce' => wp_create_nonce('wp_rest')
+    ));
 }
 
 add_action('wp_enqueue_scripts', 'boilerplate_load_assets');
