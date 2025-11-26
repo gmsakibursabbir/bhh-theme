@@ -215,7 +215,7 @@ add_action('rest_api_init', function () {
     register_rest_route('bh/v1', '/submit-quote', array(
         'methods' => 'POST',
         'callback' => 'bh_handle_quote_submission',
-        'permission_callback' => '__return_true', // Validation handled inside
+        'permission_callback' => '__return_true', // Allow public access
     ));
 });
 
