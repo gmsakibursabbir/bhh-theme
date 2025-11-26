@@ -221,31 +221,32 @@ get_header(); ?>
                     Business Mobiles</h2>
 
                 <!-- infinite loop top -->
-                <div id="showcase-slider-top" class="splide infiniteloopsme block lg:hidden" data-config='<?php echo esc_attr(json_encode([
-                    "type" => "loop",
-                    "perPage" => 6,
-                    "gap" => "2rem",
-                    "drag" => "free", // Makes manual dragging smooth and free-flowing
-                    "arrows" => false,
-                    "pagination" => false,
-                    "cover" => false,
-                    "fade" => false,
-                    "autoScroll" => [
-                        "speed" => 1,
-                        "pauseOnHover" => true, // Optional: Pause when user hovers
-                    ],
-                    "breakpoints" => [
-                        1024 => [
-                            "perPage" => 4,
-                            "gap" => "1rem",
+                <div id="showcase-slider-top" class="splide splide-showcase infiniteloopsme block lg:hidden"
+                    data-config='<?php echo esc_attr(json_encode([
+                        "type" => "loop",
+                        "perPage" => 6,
+                        "gap" => "2rem",
+                        "drag" => "free", // Makes manual dragging smooth and free-flowing
+                        "arrows" => false,
+                        "pagination" => false,
+                        "cover" => false,
+                        "fade" => false,
+                        "autoScroll" => [
+                            "speed" => 1,
+                            "pauseOnHover" => true, // Optional: Pause when user hovers
                         ],
-                        640 => [
-                            "perPage" => 4,
-                            "gap" => "0.5rem",
-                            "arrows" => false,
+                        "breakpoints" => [
+                            1024 => [
+                                "perPage" => 4,
+                                "gap" => "1rem",
+                            ],
+                            640 => [
+                                "perPage" => 4,
+                                "gap" => "0.5rem",
+                                "arrows" => false,
+                            ],
                         ],
-                    ],
-                ])); ?>'>
+                    ])); ?>'>
                     <div class="splide__track">
                         <ul class="splide__list">
                             <!-- 
@@ -284,8 +285,7 @@ get_header(); ?>
 
             <!-- steps -->
 
-            <div
-                class="">
+            <div class="">
                 <div id="multi-step-quote-form"></div>
             </div>
 
@@ -294,7 +294,7 @@ get_header(); ?>
                 <h3
                     class="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-secondary mx-auto text-center leading-tight mb-[120px]">
                     Some of the businesses we have helped with their business mobiles</h3>
-                <div id="showcase-slider" class="splide infiniteloopsme" data-config='<?php echo esc_attr(json_encode([
+                <div id="showcase-slider" class="splide splide-showcase infiniteloopsme" data-config='<?php echo esc_attr(json_encode([
                     "type" => "loop",
                     "perPage" => 6,
                     "gap" => "2rem",
@@ -508,20 +508,22 @@ get_header(); ?>
         </div>
     </section>
     <!-- blog -->
-  <section class="pt-[53px] pb-[50px] lg:pt-10 lg:pb-[70px] bg-light-gray">
-    <div class="w-full lg:max-w-[1200px] mx-auto px-[25px]">
-      <div class="mb-[83px]">
-        <h4 class="text-sm lg:text-lg xl:text-2xl text-yellow font-extrabold text-center">RESOURCES</h4>
-        <h3
-          class="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-secondary mx-auto text-center leading-none pt-[15px] pb-[24px] lg:pt-[22px] lg:pb-[24px]">
-          Your
-          shortcut to smarter business decisions</h3>
-        <p class="text-base text-dark mx-auto text-center font-semibold max-w-[777px]">From the latest mobile network
-          information to the full fibre roll out, check out our resources to help keep your business telecoms run
-          smoothly.</p>
-      </div>
+    <section class="pt-[53px] pb-[50px] lg:pt-10 lg:pb-[70px] bg-light-gray">
+        <div class="w-full lg:max-w-[1200px] mx-auto px-[25px]">
+            <div class="mb-[83px]">
+                <h4 class="text-sm lg:text-lg xl:text-2xl text-yellow font-extrabold text-center">RESOURCES</h4>
+                <h3
+                    class="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-secondary mx-auto text-center leading-none pt-[15px] pb-[24px] lg:pt-[22px] lg:pb-[24px]">
+                    Your
+                    shortcut to smarter business decisions</h3>
+                <p class="text-base text-dark mx-auto text-center font-semibold max-w-[777px]">From the latest mobile
+                    network
+                    information to the full fibre roll out, check out our resources to help keep your business telecoms
+                    run
+                    smoothly.</p>
+            </div>
 
-      <!-- 
+            <!-- 
          BLOG SLIDER (Built from Zero)
          - ID: blog-carousel
          - Type: Loop (Infinite standard slide)
@@ -531,130 +533,135 @@ get_header(); ?>
          - Arrow Navigation: True
          - Pagination: False
       -->
-      <div id="blog-carousel" class="splide blog-carousel" data-config='<?php echo esc_attr(json_encode([
-        "type" => "loop",      // Fade is often better for full-screen hero sliders
-        "rewind" => true,
-        "autoplay" => true,
-        "speed" => 1000,
-        "arrows" => true,
-        "pagination" => false,
-        "pauseOnHover" => false,
-        "breakpoints" => [
-          1024 => [
-            "perPage" => 1,
-            "gap" => "1.5rem",
-          ],
-          640 => [
-            "perPage" => 1,
-            "gap" => "1rem",
-          ]
-        ]
-      ])); ?>'>
+            <div id="blog-carousel" class="splide blog-carousel" data-config='<?php echo esc_attr(json_encode([
+                "type" => "loop",      // Fade is often better for full-screen hero sliders
+                "rewind" => true,
+                "autoplay" => true,
+                "speed" => 1000,
+                "arrows" => true,
+                "pagination" => false,
+                "pauseOnHover" => false,
+                "breakpoints" => [
+                    1024 => [
+                        "perPage" => 1,
+                        "gap" => "1.5rem",
+                    ],
+                    640 => [
+                        "perPage" => 1,
+                        "gap" => "1rem",
+                    ]
+                ]
+            ])); ?>'>
 
-        <div class="splide__track py-4">
-          <ul class="splide__list">
+                <div class="splide__track py-4">
+                    <ul class="splide__list">
 
-            <?php
-            // 1. Define Query Arguments
-            $blog_query = new WP_Query(array(
-              'post_type' => 'post',
-              'posts_per_page' => 6, // Number of slides
-            ));
+                        <?php
+                        // 1. Define Query Arguments
+                        $blog_query = new WP_Query(array(
+                            'post_type' => 'post',
+                            'posts_per_page' => 6, // Number of slides
+                        ));
 
-            // 2. Start Loop
-            if ($blog_query->have_posts()):
-              while ($blog_query->have_posts()):
-                $blog_query->the_post();
+                        // 2. Start Loop
+                        if ($blog_query->have_posts()):
+                            while ($blog_query->have_posts()):
+                                $blog_query->the_post();
 
-                // Helper for Read Time
-                $word_count = str_word_count(strip_tags(get_the_content()));
-                $read_time = ceil($word_count / 200); // 200 words per minute
-            
-                // Helper for Image
-                $img_url = get_the_post_thumbnail_url(get_the_ID(), 'large');
-                // Fallback image if no featured image exists
-                if (!$img_url) {
-                  $img_url = get_theme_file_uri('/assets/media/sc-04.png');
-                }
-                ?>
+                                // Helper for Read Time
+                                $word_count = str_word_count(strip_tags(get_the_content()));
+                                $read_time = ceil($word_count / 200); // 200 words per minute
+                        
+                                // Helper for Image
+                                $img_url = get_the_post_thumbnail_url(get_the_ID(), 'large');
+                                // Fallback image if no featured image exists
+                                if (!$img_url) {
+                                    $img_url = get_theme_file_uri('/assets/media/sc-04.png');
+                                }
+                                ?>
 
-                <li class="splide__slide p-4">
-                  <div
-                    class="bg-white rounded-xl lg:rounded-[30px] shadow-xl overflow-hidden flex flex-col lg:flex-row h-auto h-[714px] lg:h-[465px]">
+                                <li class="splide__slide p-4">
+                                    <div
+                                        class="bg-white rounded-xl lg:rounded-[30px] shadow-xl overflow-hidden flex flex-col lg:flex-row h-auto h-[714px] lg:h-[465px]">
 
-                    <!-- Left: Featured Image -->
-                    <div class="w-full lg:w-[45%] h-[376px] lg:h-[250px] lg:h-full relative">
-                      <img src="<?php echo esc_url($img_url); ?>" alt="<?php the_title_attribute(); ?>"
-                        class="absolute inset-0 w-full h-full object-cover" />
-                    </div>
+                                        <!-- Left: Featured Image -->
+                                        <div class="w-full lg:w-[45%] h-[376px] lg:h-[250px] lg:h-full relative">
+                                            <img src="<?php echo esc_url($img_url); ?>" alt="<?php the_title_attribute(); ?>"
+                                                class="absolute inset-0 w-full h-full object-cover" />
+                                        </div>
 
-                    <!-- Right: Content -->
-                    <div class="w-full lg:w-[55%] p-6 lg:px-[50px] lg:py-10 flex flex-col justify-center text-left">
+                                        <!-- Right: Content -->
+                                        <div
+                                            class="w-full lg:w-[55%] p-6 lg:px-[50px] lg:py-10 flex flex-col justify-center text-left">
 
-                      <!-- Post Title -->
-                      <h3 class="text-dark text-lg lg:text-[22px] font-extrabold leading-snug">
-                        <a href="<?php the_permalink(); ?>" class="hover:text-[#205B17] transition-colors">
-                          <?php the_title(); ?>
-                        </a>
-                      </h3>
+                                            <!-- Post Title -->
+                                            <h3 class="text-dark text-lg lg:text-[22px] font-extrabold leading-snug">
+                                                <a href="<?php the_permalink(); ?>"
+                                                    class="hover:text-[#205B17] transition-colors">
+                                                    <?php the_title(); ?>
+                                                </a>
+                                            </h3>
 
-                      <!-- Meta: Date & Read Time -->
-                      <div
-                        class="flex items-center text-[#FFDC46] font-bold text-sm lg:text-base mt-2 mb-5 lg:mt-[18px] lg:mb-12 uppercase tracking-wide">
-                        <span><?php echo get_the_date('F j, Y'); ?></span>
-                        <span class="mx-2">•</span>
-                        <span><?php echo $read_time; ?> Min Read</span>
-                      </div>
+                                            <!-- Meta: Date & Read Time -->
+                                            <div
+                                                class="flex items-center text-[#FFDC46] font-bold text-sm lg:text-base mt-2 mb-5 lg:mt-[18px] lg:mb-12 uppercase tracking-wide">
+                                                <span><?php echo get_the_date('F j, Y'); ?></span>
+                                                <span class="mx-2">•</span>
+                                                <span><?php echo $read_time; ?> Min Read</span>
+                                            </div>
 
-                      <!-- Excerpt -->
-                      <div class="text-dark text-base font-semibold mb-5 lg:mb-[50px] leading-tight line-clamp-3">
-                        <?php the_excerpt(); ?>
-                      </div>
+                                            <!-- Excerpt -->
+                                            <div
+                                                class="text-dark text-base font-semibold mb-5 lg:mb-[50px] leading-tight line-clamp-3">
+                                                <?php the_excerpt(); ?>
+                                            </div>
 
-                      <!-- Read More Link -->
-                      <div>
-                        <a href="<?php the_permalink(); ?>"
-                          class="inline-flex items-center bg-[#FFDC46] text-dark font-extrabold py-3 px-8 rounded-full hover:bg-yellow-300 transition-colors">
-                          Read more
-                          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
-                          </svg>
-                        </a>
-                      </div>
+                                            <!-- Read More Link -->
+                                            <div>
+                                                <a href="<?php the_permalink(); ?>"
+                                                    class="inline-flex items-center bg-[#FFDC46] text-dark font-extrabold py-3 px-8 rounded-full hover:bg-yellow-300 transition-colors">
+                                                    Read more
+                                                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="3"
+                                                        viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7">
+                                                        </path>
+                                                    </svg>
+                                                </a>
+                                            </div>
 
-                    </div>
-                  </div>
-                </li>
+                                        </div>
+                                    </div>
+                                </li>
 
-                <?php
-              endwhile;
-              wp_reset_postdata(); // Important: Reset global post data
-            else:
-              ?>
-              <!-- Fallback if no posts found -->
-              <li class="splide__slide">
-                <div class="p-12 text-center">No posts found.</div>
-              </li>
-            <?php endif; ?>
+                                <?php
+                            endwhile;
+                            wp_reset_postdata(); // Important: Reset global post data
+                        else:
+                            ?>
+                            <!-- Fallback if no posts found -->
+                            <li class="splide__slide">
+                                <div class="p-12 text-center">No posts found.</div>
+                            </li>
+                        <?php endif; ?>
 
-          </ul>
+                    </ul>
+                </div>
+
+                <!-- Custom Navigation Arrows -->
+                <div class="splide__arrows flex justify-center gap-5 mt-[55px]">
+                    <button class="splide__arrow splide__arrow--prev !static">
+                        <img src="<?php echo esc_url(get_theme_file_uri('assets/media/arrow-left.svg')); ?>"
+                            alt="previous arrow" class="min-w-[36px] min-h-[36px]" />
+                    </button>
+                    <button class="splide__arrow splide__arrow--next !static ">
+                        <img src="<?php echo esc_url(get_theme_file_uri('assets/media/arrow-right.svg')); ?>"
+                            alt="next arrow" class="min-w-[36px] min-h-[36px]" />
+                    </button>
+                </div>
+
+            </div>
         </div>
-
-        <!-- Custom Navigation Arrows -->
-        <div class="splide__arrows flex justify-center gap-5 mt-[55px]">
-          <button class="splide__arrow splide__arrow--prev !static">
-            <img src="<?php echo esc_url(get_theme_file_uri('assets/media/arrow-left.svg')); ?>" alt="previous arrow"
-              class="min-w-[36px] min-h-[36px]" />
-          </button>
-          <button class="splide__arrow splide__arrow--next !static ">
-            <img src="<?php echo esc_url(get_theme_file_uri('assets/media/arrow-right.svg')); ?>" alt="next arrow"
-              class="min-w-[36px] min-h-[36px]" />
-          </button>
-        </div>
-
-      </div>
-    </div>
-  </section>
+    </section>
 
     <!-- newsletter -->
 

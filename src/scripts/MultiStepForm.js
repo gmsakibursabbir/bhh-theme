@@ -109,6 +109,7 @@ const IconUser = (props) => (
     height="73"
     fill="none"
     viewBox="0 0 72 73"
+    {...props}
   >
     <circle cx="36" cy="20" r="16" stroke="currentColor" stroke-width="8" />
     <path
@@ -179,6 +180,7 @@ const IconOther = (props) => (
 const MultiStepForm = () => {
   const [step, setStep] = useState(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
   const [formData, setFormData] = useState({
     handsets: "",
     contract: "",
@@ -202,9 +204,11 @@ const MultiStepForm = () => {
     setFormData((prev) => ({ ...prev, [field]: value }));
 
     if (step >= 1 && step <= 3) {
+      setIsAnimating(true);
       setTimeout(() => {
         setStep((prev) => Math.min(prev + 1, totalSteps));
-      }, 120);
+        setIsAnimating(false);
+      }, 400); // Match the fadeOut animation duration
     }
   };
 
@@ -300,8 +304,8 @@ const MultiStepForm = () => {
       className={`cursor-pointer rounded-[15px] border-2 p-4 lg:p-[30px] flex flex-col items-center text-center transition-all duration-200 min-h-[160px] lg:min-h-[265px] shadow-[0px_4px_19px_-1px_rgba(0,0,0,0.2)] group
         ${
           formData[field] === value
-            ? "border-[#53a336] bg-[#53a336] text-white"
-            : "border-[#D9D9D9] bg-white hover:border-[#53a336] hover:bg-[#53a336] hover:text-white text-[#92D93E]"
+            ? "border-[#359327] bg-[#359327] text-white"
+            : "border-[#D9D9D9] bg-white hover:border-[#359327] hover:bg-[#359327] hover:text-white text-[#92D93E]"
         }`}
     >
       <div className="flex-1 flex justify-center items-center w-full">
@@ -323,7 +327,10 @@ const MultiStepForm = () => {
 
   const ProgressBar = () => (
     <div className="w-full max-w-[712px] mx-auto mb-8.5">
-      <div className="text-center text-yellow font-extrabold uppercase text-sm lg:text-xl tracking-wider lg:mb-[27px] mb-[21px]">
+      <div
+        key={step}
+        className="text-center text-yellow font-extrabold uppercase text-sm lg:text-xl tracking-wider lg:mb-[27px] mb-[21px] "
+      >
         {step === 5
           ? "AND FINALLY"
           : step === 4
@@ -334,8 +341,11 @@ const MultiStepForm = () => {
       </div>
       <div className="h-[18px] bg-[#F4F6F2] rounded-full overflow-hidden">
         <div
-          className="h-full bg-[#92D93E] transition-all duration-500 ease-out"
-          style={{ width: `${(step / totalSteps) * 100}%` }}
+          className="h-full bg-[#92D93E]"
+          style={{
+            width: `${(step / totalSteps) * 100}%`,
+            transition: "width 0.8s cubic-bezier(0.4, 0, 0.2, 1)",
+          }}
         ></div>
       </div>
     </div>
@@ -348,11 +358,11 @@ const MultiStepForm = () => {
 
         {/* STEP 1 */}
         {step === 1 && (
-          <div className="animate-fade-in">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary text-center mb-2">
+          <div className={isAnimating ? "animate-fade-out" : "animate-fade-in"}>
+            <h2 className="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-[#359327] text-center mb-[17px] lg:mb-5">
               How many handsets or SIMs do you require?
             </h2>
-            <p className="text-center text-gray-500 font-bold mb-10">
+            <p className="text-center text-dark font-semibold mb-[37px] lg:mb-[68px]">
               Please select below
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-[26px] lg:gap-6">
@@ -394,11 +404,11 @@ const MultiStepForm = () => {
 
         {/* STEP 2 */}
         {step === 2 && (
-          <div className="animate-fade-in">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary text-center mb-2">
+          <div className={isAnimating ? "animate-fade-out" : "animate-fade-in"}>
+            <h2 className="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-[#359327] text-center mb-[17px] lg:mb-5">
               When does your current contract expire?
             </h2>
-            <p className="text-center text-gray-500 font-bold mb-10">
+            <p className="text-center text-dark font-semibold mb-[37px] lg:mb-[68px]">
               Please select below
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-[26px] lg:gap-6">
@@ -407,7 +417,7 @@ const MultiStepForm = () => {
                 value="Out of contract"
                 label="Out of contract"
                 Icon={IconCalendar}
-                labelClassName="text-base lg:text-[27px]"
+                labelClassName="text-base lg:text-[22px]"
                 iconClassName="h-[35px] w-[35px] lg:h-[64px] lg:w-[64px]"
               />
               <SelectionCard
@@ -415,7 +425,7 @@ const MultiStepForm = () => {
                 value="Under 3 months"
                 label="Under 3 months"
                 Icon={IconCalendar}
-                labelClassName="text-base lg:text-[27px]"
+                labelClassName="text-base lg:text-[22px]"
                 iconClassName="h-[35px] w-[35px] lg:h-[64px] lg:w-[64px]"
               />
               <SelectionCard
@@ -423,7 +433,7 @@ const MultiStepForm = () => {
                 value="3 months +"
                 label="3 months +"
                 Icon={IconCalendar}
-                labelClassName="text-base lg:text-[27px]"
+                labelClassName="text-base lg:text-[22px]"
                 iconClassName="h-[35px] w-[35px] lg:h-[64px] lg:w-[64px]"
               />
               <SelectionCard
@@ -431,7 +441,7 @@ const MultiStepForm = () => {
                 value="Not sure"
                 label="Not sure"
                 Icon={IconCalendar}
-                labelClassName="text-base lg:text-[27px]"
+                labelClassName="text-base lg:text-[22px]"
                 iconClassName="h-[35px] w-[35px] lg:h-[64px] lg:w-[64px]"
               />
             </div>
@@ -440,11 +450,11 @@ const MultiStepForm = () => {
 
         {/* STEP 3 */}
         {step === 3 && (
-          <div className="animate-fade-in">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary text-center mb-2">
+          <div className={isAnimating ? "animate-fade-out" : "animate-fade-in"}>
+            <h2 className="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-[#359327] text-center mb-[17px] lg:mb-5">
               What type of business are you?
             </h2>
-            <p className="text-center text-dark font-bold mb-10">
+            <p className="text-center text-dark font-semibold mb-[37px] lg:mb-[68px]">
               Please select below
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-[26px] lg:gap-6">
@@ -453,7 +463,7 @@ const MultiStepForm = () => {
                 value="Sole trader"
                 label="Sole trader"
                 Icon={IconUser}
-                labelClassName="text-base lg:text-[27px]"
+                labelClassName="text-base lg:text-[22px]"
                 iconClassName="h-[40px] w-[40px] lg:h-[70px] lg:w-[70px]"
               />
               <SelectionCard
@@ -461,7 +471,7 @@ const MultiStepForm = () => {
                 value="Partnership"
                 label="Partnership"
                 Icon={IconHandshake}
-                labelClassName="text-base lg:text-[27px]"
+                labelClassName="text-base lg:text-[22px]"
                 iconClassName="h-[40px] w-[40px] lg:h-[70px] lg:w-[70px]"
               />
               <SelectionCard
@@ -469,7 +479,7 @@ const MultiStepForm = () => {
                 value="LTD company"
                 label="LTD company"
                 Icon={IconBusiness}
-                labelClassName="text-base lg:text-[27px]"
+                labelClassName="text-base lg:text-[22px]"
                 iconClassName="h-[40px] w-[40px] lg:h-[70px] lg:w-[70px]"
               />
               <SelectionCard
@@ -477,7 +487,7 @@ const MultiStepForm = () => {
                 value="Other"
                 label="Other"
                 Icon={IconOther}
-                labelClassName="text-base lg:text-[27px]"
+                labelClassName="text-base lg:text-[22px]"
                 iconClassName="h-[40px] w-[40px] lg:h-[70px] lg:w-[70px]"
               />
             </div>
@@ -486,8 +496,12 @@ const MultiStepForm = () => {
 
         {/* STEP 4 */}
         {step === 4 && (
-          <div className="animate-fade-in max-w-2xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary text-center mb-10">
+          <div
+            className={`${
+              isAnimating ? "animate-fade-out" : "animate-fade-in"
+            } max-w-[947px] mx-auto`}
+          >
+            <h2 className="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-[#359327] text-center mb-[17px] lg:mb-5">
               Tell us about your business
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-[26px] lg:gap-6">
@@ -501,7 +515,7 @@ const MultiStepForm = () => {
                   value={formData.businessName}
                   onChange={handleChange}
                   placeholder="Your business name"
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-[#72c865] focus:ring-2 focus:ring-[#72c865] outline-none bg-gray-50"
+                  className="w-full px-4 py-3 rounded-xl border-[2px] border-[#D9D9D9] focus:border-[#359327] focus:ring-2 focus:ring-[#359327] outline-none bg-[#FCFCFC] placeholder:text-[#D9D9D9] placeholder:font-extrabold"
                 />
               </div>
               <div>
@@ -514,7 +528,7 @@ const MultiStepForm = () => {
                   value={formData.postcode}
                   onChange={handleChange}
                   placeholder="Postcode"
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-[#72c865] focus:ring-2 focus:ring-[#72c865] outline-none bg-gray-50"
+                  className="w-full px-4 py-3 rounded-xl border-[2px] border-[#D9D9D9] focus:border-[#359327] focus:ring-2 focus:ring-[#359327] outline-none bg-[#FCFCFC] placeholder:text-[#D9D9D9] placeholder:font-extrabold"
                 />
               </div>
             </div>
@@ -523,11 +537,15 @@ const MultiStepForm = () => {
 
         {/* STEP 5 */}
         {step === 5 && (
-          <div className="animate-fade-in max-w-2xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary text-center mb-10">
+          <div
+            className={`${
+              isAnimating ? "animate-fade-out" : "animate-fade-in"
+            } max-w-[947px] mx-auto`}
+          >
+            <h2 className="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-[#359327] text-center mb-[17px] lg:mb-5">
               Tell us about you
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-[26px] lg:gap-6 mb-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-[26px] lg:gap-6">
               <div>
                 <label className="block text-primary font-bold mb-2">
                   First name *
@@ -538,7 +556,7 @@ const MultiStepForm = () => {
                   value={formData.firstName}
                   onChange={handleChange}
                   placeholder="First name"
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-[#72c865] focus:ring-2 focus:ring-[#72c865] outline-none bg-gray-50"
+                  className="w-full px-4 py-3 rounded-xl border-[2px] border-[#D9D9D9] focus:border-[#359327] focus:ring-2 focus:ring-[#359327] outline-none bg-[#FCFCFC] placeholder:text-[#D9D9D9] placeholder:font-extrabold"
                 />
               </div>
               <div>
@@ -551,7 +569,7 @@ const MultiStepForm = () => {
                   value={formData.lastName}
                   onChange={handleChange}
                   placeholder="Last name"
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-[#72c865] focus:ring-2 focus:ring-[#72c865] outline-none bg-gray-50"
+                  className="w-full px-4 py-3 rounded-xl border-[2px] border-[#D9D9D9] focus:border-[#359327] focus:ring-2 focus:ring-[#359327] outline-none bg-[#FCFCFC] placeholder:text-[#D9D9D9] placeholder:font-extrabold"
                 />
               </div>
               <div>
@@ -564,7 +582,7 @@ const MultiStepForm = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Business email"
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-[#72c865] focus:ring-2 focus:ring-[#72c865] outline-none bg-gray-50"
+                  className="w-full px-4 py-3 rounded-xl border-[2px] border-[#D9D9D9] focus:border-[#359327] focus:ring-2 focus:ring-[#359327] outline-none bg-[#FCFCFC] placeholder:text-[#D9D9D9] placeholder:font-extrabold"
                 />
               </div>
               <div>
@@ -577,7 +595,7 @@ const MultiStepForm = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="Contact number"
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-[#72c865] focus:ring-2 focus:ring-[#72c865] outline-none bg-gray-50"
+                  className="w-full px-4 py-3 rounded-xl border-[2px] border-[#D9D9D9] focus:border-[#359327] focus:ring-2 focus:ring-[#359327] outline-none bg-[#FCFCFC] placeholder:text-[#D9D9D9] placeholder:font-extrabold"
                 />
               </div>
             </div>
@@ -589,7 +607,7 @@ const MultiStepForm = () => {
           {step >= 4 && step < 5 ? (
             <button
               onClick={nextStep}
-              className="bg-[#ffdc46] text-[#002115] font-extrabold py-3 px-12 rounded-full hover:bg-[#f0cd35] transition-colors shadow-md"
+              className="bg-[#ffdc46] text-[#002115] font-extrabold py-3 px-12 rounded-full hover:bg-[#f0cd35] transition-colors shadow-md cursor-pointer"
             >
               Next
             </button>
@@ -597,7 +615,7 @@ const MultiStepForm = () => {
             <button
               onClick={handleSubmit}
               disabled={isSubmitting}
-              className="bg-[#ffdc46] text-[#002115] font-extrabold py-3 px-12 rounded-full hover:bg-[#f0cd35] transition-colors shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
+              className="bg-[#ffdc46] text-[#002115] font-extrabold py-3 px-12 rounded-full hover:bg-[#f0cd35] transition-colors shadow-md disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
             >
               {isSubmitting ? "Sending..." : "Submit"}
             </button>
@@ -607,17 +625,17 @@ const MultiStepForm = () => {
         {/* footer */}
         {/* Footer Text */}
         {step === 1 && (
-          <p className="text-center text-[#72c865] font-bold mt-6 text-sm">
+          <p className="text-center text-[#92D93E] font-extrabold mt-[36px] lg:mt-[20px] text-xl">
             Get free no obligation quotes in minutes.
           </p>
         )}
         {step === 2 && (
-          <p className="text-center text-[#72c865] font-bold mt-6 text-sm">
+          <p className="text-center text-[#92D93E] font-extrabold mt-[36px] lg:mt-[20px] text-xl">
             We compare all major UK networks so you don't have to.
           </p>
         )}
         {step === 3 && (
-          <p className="text-center text-[#72c865] font-bold mt-6 text-sm">
+          <p className="text-center text-[#92D93E] font-extrabold mt-[36px] lg:mt-[20px] text-xl">
             We have helped thousands of businesses find the best solution
           </p>
         )}

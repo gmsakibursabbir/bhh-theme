@@ -207,7 +207,7 @@ get_header(); ?>
   <!-- showcase -->
   <section>
     <div class="w-full lg:max-w-[1155px] lg:px-0 px-[25px] mx-auto pt-[52px] lg:pt-[73px]">
-      <div id="showcase-slider" class="splide infiniteloopsme" data-config='<?php echo esc_attr(json_encode([
+      <div id="showcase-slider" class="splide splide-showcase infiniteloopsme" data-config='<?php echo esc_attr(json_encode([
         "type" => "loop",
         "perPage" => 6,
         "gap" => "2rem",
@@ -326,7 +326,7 @@ get_header(); ?>
     </div>
   </section>
   <!-- services -->
-  <section class="bg-secondary/20 py-13.5 lg:pt-[109px] lg:pb-[221px]" id="services">
+  <section class="bg-secondary/20 pt-13.5 pb-[99px] lg:pt-[109px] lg:pb-[221px]" id="services">
     <div class="w-full lg:max-w-[1444px] lg:px-0 px-[25px] mx-auto">
       <div class="">
         <h4 class="text-sm lg:text-lg xl:text-2xl text-yellow font-extrabold text-center">
@@ -488,6 +488,7 @@ get_header(); ?>
           "type" => "loop",      // Fade is often better for full-screen hero sliders
           "rewind" => true,
           "autoplay" => true,
+          "gap" => "1rem",
           "interval" => 8000,
           "speed" => 1000,
           "arrows" => true,

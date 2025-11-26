@@ -121,30 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
   // ------------------------------------------------------
-  // 4. Splide Slider Logic
+  // NOTE: Splide initialization is handled by splide-init.js
+  // Do not initialize here to avoid duplicate pagination
   // ------------------------------------------------------
-  const sliders = document.querySelectorAll(".splide");
-
-  if (sliders.length > 0 && typeof Splide !== "undefined") {
-    sliders.forEach((slider) => {
-      // Get config from data attribute if it exists
-      let config = {};
-      const configData = slider.getAttribute("data-config");
-
-      if (configData) {
-        try {
-          config = JSON.parse(configData);
-        } catch (e) {
-          console.error("Error parsing Splide config:", e);
-        }
-      }
-
-      // Initialize Splide
-      if (window.splide && window.splide.Extensions) {
-        new Splide(slider, config).mount(window.splide.Extensions);
-      } else {
-        new Splide(slider, config).mount();
-      }
-    });
-  }
 });

@@ -81,9 +81,20 @@
     // Default: simple single instance
     splideInstance = new Splide(el, config);
 
-    // Mount with window.splide.Extensions ONLY for the showcase slider
-    // Mount with window.splide.Extensions ONLY for the showcase slider
-    if (el.classList.contains("infiniteloopsme")) {
+    // Mount with Extensions for showcase sliders (infiniteloopsme class)
+    // This enables the AutoScroll extension
+    if (
+      el.classList.contains("splide-showcase") &&
+      window.splide &&
+      window.splide.Extensions
+    ) {
+      splideInstance.mount(window.splide.Extensions);
+    } else if (
+      el.classList.contains("infiniteloopsme") &&
+      window.splide &&
+      window.splide.Extensions
+    ) {
+      // Fallback: support old infiniteloopsme class for backward compatibility
       splideInstance.mount(window.splide.Extensions);
     } else {
       splideInstance.mount();

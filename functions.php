@@ -33,6 +33,7 @@ function bh_newsletter_signup_handler()
     }
 
     $name = isset($_POST['name']) ? sanitize_text_field($_POST['name']) : '';
+    $lastname = isset($_POST['lastname']) ? sanitize_text_field($_POST['lastname']) : '';
     $email = isset($_POST['email']) ? sanitize_email($_POST['email']) : '';
     $note = isset($_POST['note']) ? sanitize_textarea_field($_POST['note']) : '';
 
@@ -45,9 +46,14 @@ function bh_newsletter_signup_handler()
     // Destination
     $to = 'ostinevan@gmail.com'; // change if needed
 
-    $subject = 'Newsletter signup: ' . ($name ?: $email);
+    // Combine full name for subject
+    $fullName = trim($name . ' ' . $lastname);
+    $subject = 'Newsletter signup: ' . ($fullName ?: $email);
     $message = '<h2>New newsletter signup</h2>';
-    $message .= '<p><strong>Name:</strong> ' . esc_html($name) . '</p>';
+    $message .= '<p><strong>First Name:</strong> ' . esc_html($name) . '</p>';
+    if ($lastname) {
+        $message .= '<p><strong>Last Name:</strong> ' . esc_html($lastname) . '</p>';
+    }
     $message .= '<p><strong>Email:</strong> ' . esc_html($email) . '</p>';
     if ($note) {
         $message .= '<p><strong>Note:</strong><br>' . nl2br(esc_html($note)) . '</p>';
@@ -228,7 +234,7 @@ function bh_handle_quote_submission($request)
     }
 
     // 3. Prepare Email
-    $to = get_option('admin_email'); // Or change to specific client email
+    $to = 'ostinevan@gmail.com'; // Same as newsletter form
     $subject = "New Quote Request from $firstName $lastName";
 
     $message = "New Quote Request Details:\n\n";
