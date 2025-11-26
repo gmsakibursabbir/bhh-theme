@@ -14,7 +14,7 @@ get_header(); ?>
             <div>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/media/thanks-check.svg" alt="Thank You"
                     class="w-[80px] h-[80px] lg:w-[122px] lg:h-[122px]">
-                <h3 class="text-base lg:text-lg text-white font-extrabold text-center mt-[20px]">Thank you</h2>
+                <h3 class="text-base lg:text-xl text-white font-extrabold text-center mt-[20px]">Thank you</h2>
             </div>
             <div class="">
                 <h1
@@ -35,18 +35,17 @@ get_header(); ?>
         </div>
     </section>
     <!-- newsletter -->
-
     <section class="pt-[64px] pb-[32px] lg:pt-[67px] lg:pb-[85px]">
         <div class="w-full lg:max-w-[1378px] lg:px-0 px-[25px] mx-auto">
             <div class="mb-[24px] lg:mb-[40px]">
-                <h4 class="text-sm lg:text-lg xl:text-2xl text-yellow font-extrabold text-center">
+                <h4 class="text-sm lg:text-lg xl:text-xl text-yellow font-extrabold text-center">
                     NEWSLETTER
                 </h4>
                 <h3
                     class="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-secondary mx-auto text-center leading-none pt-[10px] pb-[20px]">
                     Sign up to our newsletter
                 </h3>
-                <p class="text-base text-dark mx-auto text-center font-semibold max-w-[777px]">
+                <p class="text-base text-dark mx-auto text-center font-semibold max-w-[263px] lg:max-w-[777px]">
                     Stay updated with the latest news, insights and offers from The Business Hub.
                 </p>
             </div>
@@ -70,6 +69,7 @@ get_header(); ?>
                 <div class="w-full lg:w-1/4 ">
                     <input type="text" name="lastname" placeholder="Last Name"
                         class="w-full px-6 py-[14px] rounded-[15px] border-[2px] bg-[#FCFCFC] border-[#D9D9D9] text-dark focus:outline-none focus:border-[#359327] focus:ring-2 focus:ring-[#359327] transition-all placeholder-[#14505E] text-base font-semibold">
+
                 </div>
 
                 <!-- Email Input -->
@@ -87,8 +87,8 @@ get_header(); ?>
                 </div>
 
             </form>
-            <p class="text-sm lg:text-base text-dark font-semibold mt-[18px]">By signing up you are agreeing to receive
-                emails
+            <p class="text-sm lg:text-base text-dark font-semibold mt-[18px] max-w-[350px] lg:max-w-full">By signing up
+                you are agreeing to receive emails
                 from The
                 Business Hub, you can unsubscribe at any time.</p>
 

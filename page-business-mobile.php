@@ -33,10 +33,10 @@ get_header(); ?>
 
                         <!-- CONTENT CONTAINER (Left Side) -->
                         <div
-                            class="container mx-auto px-0 lg:px-[25px] relative z-10 h-full flex flex-col justify-end md:justify-center gap-[30px]">
+                            class="lg:max-w-[1444px] w-full mx-auto px-0 lg:px-[25px] relative z-10 h-full flex flex-col justify-end md:justify-center gap-[30px]">
                             <div class="w-full lg:w-1/2 text-white px-[25px] md:px-0 pt-[111px] md:pt-0">
                                 <h1
-                                    class="text-[30px] lg:text-[36px] xl:text-[44px] font-bold leading-tight max-w-[430px] lg:max-w-[491px]">
+                                    class="text-[30px] lg:text-[36px] xl:text-[44px] font-bold leading-[36px] lg:leading-[58px] lg:max-w-[491px]">
                                     Compare the leading UK mobile networks.
                                 </h1>
                                 <ul class="flex flex-row items-center gap-[10px] lg:gap-5 py-[20px] lg:py-[28px]">
@@ -50,7 +50,7 @@ get_header(); ?>
                                             alt="ee" class="w-[38px] h-[38px] lg:w-[80px] lg:h-[80px]"></li>
                                 </ul>
                                 <p
-                                    class="text-white text-[18px] lg:text-[24px] xl:text-[32px] font-normal lg:font-bold max-w-[466px]">
+                                    class="text-white text-[18px] lg:text-[24px] xl:text-[32px] font-normal lg:font-bold max-w-[252px] md:max-w-[466px] leading-[24px] lg:leading-[46px]">
                                     Quickly and easily get the best business mobile deal for your business.
                                 </p>
                                 <a href="#"
@@ -76,15 +76,15 @@ get_header(); ?>
 
                         <!-- CONTENT CONTAINER (Left Side) -->
                         <div
-                            class="container mx-auto px-0 lg:px-[25px] relative z-10 h-full flex flex-col justify-end md:justify-center gap-[30px]">
-                            <div class="w-full lg:w-1/2 text-white px-[25px] md:px-0 pt-[111px] md:pt-0">
+                            class="lg:max-w-[1444px] w-full mx-auto px-0 lg:px-[25px] relative z-10 h-full flex flex-col justify-end md:justify-center gap-[30px]">
+                            <div class="w-full lg:w-1/2 text-white px-[25px] md:px-0 ">
                                 <h1
-                                    class="text-[30px] lg:text-[36px] xl:text-[44px] font-bold leading-tight max-w-[430px] lg:max-w-[491px]">
+                                    class="text-[30px] lg:text-[36px] xl:text-[44px] font-bold leading-[36px] lg:leading-[58px] lg:max-w-[491px]">
                                     Take control of your business telecom and IT services.
                                 </h1>
 
                                 <p
-                                    class="text-white text-[18px] lg:text-[24px] xl:text-[32px] font-normal max-w-[466px] mt-5 lg:mt-[28px]">
+                                    class="text-white text-[18px] lg:text-[24px] xl:text-[32px] font-normal lg:font-bold max-w-[252px] md:max-w-[466px] leading-[24px] lg:leading-[46px] mt-[20px] lg:mt-[28px]">
                                     Let us find you the best options, quickly and easily.
                                 </p>
                                 <a href="#"
@@ -110,15 +110,15 @@ get_header(); ?>
 
                         <!-- CONTENT CONTAINER (Left Side) -->
                         <div
-                            class="container mx-auto px-0 lg:px-[25px] relative z-10 h-full flex flex-col justify-end md:justify-center gap-[30px]">
+                            class="lg:max-w-[1444px] w-full mx-auto px-0 lg:px-[25px] relative z-10 h-full flex flex-col justify-end md:justify-center gap-[30px]">
                             <div class="w-full lg:w-1/2 text-white px-[25px] md:px-0 pt-[111px] md:pt-0">
                                 <h1
-                                    class="text-[30px] lg:text-[36px] xl:text-[44px] font-bold leading-tight max-w-[430px] lg:max-w-[491px]">
+                                    class="text-[30px] lg:text-[36px] xl:text-[44px] font-bold leading-[36px] lg:leading-[58px] lg:max-w-[491px]">
                                     Take control of your business telecom and IT services.
                                 </h1>
 
                                 <p
-                                    class="text-white text-[18px] lg:text-[24px] xl:text-[32px] font-normal max-w-[466px] mt-5 lg:mt-[28px]">
+                                    class="text-white text-[18px] lg:text-[24px] xl:text-[32px] font-normal lg:font-bold max-w-[252px] md:max-w-[466px] leading-[24px] lg:leading-[46px] mt-[20px] lg:mt-[28px]">
                                     Let us find you the best options, quickly and easily.
                                 </p>
                                 <a href="#"
@@ -143,15 +143,15 @@ get_header(); ?>
 
                         <!-- CONTENT CONTAINER (Left Side) -->
                         <div
-                            class="container mx-auto px-0 lg:px-[25px] relative z-10 h-full flex flex-col justify-end md:justify-center gap-[30px]">
+                            class="lg:max-w-[1444px] w-full mx-auto px-0 lg:px-[25px] relative z-10 h-full flex flex-col justify-end md:justify-center gap-[30px]">
                             <div class="w-full lg:w-1/2 text-white px-[25px] md:px-0 pt-[111px] md:pt-0">
                                 <h1
-                                    class="text-[30px] lg:text-[36px] xl:text-[44px] font-bold leading-tight max-w-[430px] lg:max-w-[491px]">
+                                    class="text-[30px] lg:text-[36px] xl:text-[44px] font-bold leading-[36px] lg:leading-[58px] lg:max-w-[491px]">
                                     Smarter business connectivity in seconds
                                 </h1>
 
                                 <p
-                                    class="text-white text-[18px] lg:text-[24px] xl:text-[32px] font-normal max-w-[466px] mt-5 lg:mt-[28px]">
+                                    class="text-white text-[18px] lg:text-[24px] xl:text-[32px] font-normal lg:font-bold max-w-[252px] md:max-w-[466px] leading-[24px] lg:leading-[46px] mt-[20px] lg:mt-[28px]">
                                     No stress or disruption. Just one simple enquiry form that takes less than a minute
                                     to complete.
                                 </p>
@@ -178,15 +178,15 @@ get_header(); ?>
 
                         <!-- CONTENT CONTAINER (Left Side) -->
                         <div
-                            class="container mx-auto px-0 lg:px-[25px] relative z-10 h-full flex flex-col justify-end md:justify-center gap-[30px]">
+                            class="lg:max-w-[1444px] w-full mx-auto px-0 lg:px-[25px] relative z-10 h-full flex flex-col justify-end md:justify-center gap-[30px]">
                             <div class="w-full lg:w-1/2 text-white px-[25px] md:px-0 pt-[111px] md:pt-0">
                                 <h1
-                                    class="text-[30px] lg:text-[36px] xl:text-[44px] font-bold leading-tight max-w-[430px] lg:max-w-[491px]">
+                                    class="text-[30px] lg:text-[36px] xl:text-[44px] font-bold leading-[36px] lg:leading-[58px] lg:max-w-[491px]">
                                     Make smarter business telecom decisions in seconds.
                                 </h1>
 
                                 <p
-                                    class="text-white text-[18px] lg:text-[24px] xl:text-[32px] font-normal max-w-[466px] mt-5 lg:mt-[28px]">
+                                    class="text-white text-[18px] lg:text-[24px] xl:text-[32px] font-normal lg:font-bold max-w-[252px] md:max-w-[466px] leading-[24px] lg:leading-[46px] mt-[20px] lg:mt-[28px]">
                                     Reduce costs and future-proof your business in less than a minute.
                                 </p>
                                 <a href="#"
@@ -211,6 +211,7 @@ get_header(); ?>
             </div>
         </div>
     </section>
+
     <!-- product showcase -->
     <section>
         <div class=" pt-10 pb-11 lg:pt-[75px] lg:pb-[120px]">
@@ -378,7 +379,7 @@ get_header(); ?>
     <!-- support  -->
     <section class="ylg-gradient pt-[64px] pb-[59px] lg:pt-[76px] lg:pb-[63px]">
         <div
-            class="w-full lg:max-w-[1444px] lg:px-0 px-[25px] mx-auto flex flex-col lg:flex-row justify-between items-center gap-[47px] lg:gap-[68px]">
+            class="w-full lg:max-w-[1444px] px-[25px] mx-auto flex flex-col lg:flex-row justify-between items-center gap-[47px] lg:gap-[68px]">
             <div class="w-full lg:w-1/2">
                 <img src="<?php echo esc_url(get_theme_file_uri('assets/media/mobile-support.png')); ?>"
                     alt="about image" class="w-full h-full" />
@@ -418,9 +419,9 @@ get_header(); ?>
     </section>
     <!-- mobile -->
     <section class="pt-[44px] pb-[70px] lg:pt-[72px] lg:pb-[90px]">
-        <div class="w-full lg:max-w-[1444px] lg:px-0 px-[25px] mx-auto">
+        <div class="w-full lg:max-w-[1444px] px-[25px] mx-auto">
             <div class="mb-[34px] lg:mb-[66px]">
-                <h4 class="text-sm lg:text-lg xl:text-2xl text-yellow font-extrabold text-center">Business Mobile</h4>
+                <h4 class="text-sm lg:text-lg xl:text-xl text-yellow font-extrabold text-center">Business Mobile</h4>
                 <h2
                     class="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-secondary mx-auto text-center leading-none py-4">
                     Keep your business communicating</h2>
@@ -428,8 +429,8 @@ get_header(); ?>
                     contracts for your business, we are here to help.</p>
             </div>
 
-            <div class="flex flex-col lg:flex-row justify-between items-center gap-[50px] mt-6 lg:mt-[60px]">
-                <div class="w-full lg:w-4/10 order-2 lg:order-1">
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-[50px]">
+                <div class="w-full lg:w-[45%] order-2 lg:order-1">
                     <ul class="flex flex-col gap-[40px] lg:gap-[38px] mb-[53px] lg:mb-[70px]">
                         <li class="flex flex-row items-start gap-[30px]">
                             <img src="<?php echo esc_url(get_theme_file_uri('assets/media/check.png')); ?>" alt="check"
@@ -500,7 +501,7 @@ get_header(); ?>
                         </a>
                     </div>
                 </div>
-                <div class="w-full lg:w-6/10  order-1 lg:order-2">
+                <div class="w-full lg:w-[55%]  order-1 lg:order-2">
                     <img src="<?php echo esc_url(get_theme_file_uri('assets/media/work-demo.png')); ?>"
                         alt="work demo image" class="w-full h-full">
                 </div>
@@ -510,10 +511,10 @@ get_header(); ?>
     <!-- blog -->
     <section class="pt-[53px] pb-[50px] lg:pt-10 lg:pb-[70px] bg-light-gray">
         <div class="w-full lg:max-w-[1200px] mx-auto px-[25px]">
-            <div class="mb-[83px]">
-                <h4 class="text-sm lg:text-lg xl:text-2xl text-yellow font-extrabold text-center">RESOURCES</h4>
+            <div class="mb-[30px] lg:mb-[83px]">
+                <h4 class="text-sm lg:text-lg xl:text-xl text-yellow font-extrabold text-center">RESOURCES</h4>
                 <h3
-                    class="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-secondary mx-auto text-center leading-none pt-[15px] pb-[24px] lg:pt-[22px] lg:pb-[24px]">
+                    class="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-secondary mx-auto text-center leading-none pt-[15px] pb-[18px] lg:pt-[22px] lg:pb-[24px]">
                     Your
                     shortcut to smarter business decisions</h3>
                 <p class="text-base text-dark mx-auto text-center font-semibold max-w-[777px]">From the latest mobile
@@ -582,7 +583,7 @@ get_header(); ?>
 
                                 <li class="splide__slide p-4">
                                     <div
-                                        class="bg-white rounded-xl lg:rounded-[30px] shadow-xl overflow-hidden flex flex-col lg:flex-row h-auto h-[714px] lg:h-[465px]">
+                                        class="bg-white rounded-[20px] lg:rounded-[30px] shadow-xl overflow-hidden flex flex-col lg:flex-row h-[714px] lg:h-[465px]">
 
                                         <!-- Left: Featured Image -->
                                         <div class="w-full lg:w-[45%] h-[376px] lg:h-[250px] lg:h-full relative">
@@ -612,14 +613,14 @@ get_header(); ?>
 
                                             <!-- Excerpt -->
                                             <div
-                                                class="text-dark text-base font-semibold mb-5 lg:mb-[50px] leading-tight line-clamp-3">
+                                                class="text-dark text-base font-semibold mb-5 lg:mb-[50px] leading-[26px] line-clamp-3">
                                                 <?php the_excerpt(); ?>
                                             </div>
 
                                             <!-- Read More Link -->
                                             <div>
                                                 <a href="<?php the_permalink(); ?>"
-                                                    class="inline-flex items-center bg-[#FFDC46] text-dark font-extrabold py-3 px-8 rounded-full hover:bg-yellow-300 transition-colors">
+                                                    class="inline-flex items-center bg-[#FFDC46] text-dark font-extrabold py-3 px-8  rounded-full hover:bg-yellow-300 transition-colors">
                                                     Read more
                                                     <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="3"
                                                         viewBox="0 0 24 24">
@@ -648,14 +649,14 @@ get_header(); ?>
                 </div>
 
                 <!-- Custom Navigation Arrows -->
-                <div class="splide__arrows flex justify-center gap-5 mt-[55px]">
+                <div class="splide__arrows flex justify-center gap-5 mt-7 lg:mt-[55px]">
                     <button class="splide__arrow splide__arrow--prev !static">
                         <img src="<?php echo esc_url(get_theme_file_uri('assets/media/arrow-left.svg')); ?>"
-                            alt="previous arrow" class="min-w-[36px] min-h-[36px]" />
+                            alt="previous arrow" class="min-w-[42px] min-h-[42px]" />
                     </button>
                     <button class="splide__arrow splide__arrow--next !static ">
                         <img src="<?php echo esc_url(get_theme_file_uri('assets/media/arrow-right.svg')); ?>"
-                            alt="next arrow" class="min-w-[36px] min-h-[36px]" />
+                            alt="next arrow" class="min-w-[42px] min-h-[42px]" />
                     </button>
                 </div>
 
@@ -664,18 +665,17 @@ get_header(); ?>
     </section>
 
     <!-- newsletter -->
-
     <section class="pt-[64px] pb-[32px] lg:pt-[67px] lg:pb-[85px]">
         <div class="w-full lg:max-w-[1378px] lg:px-0 px-[25px] mx-auto">
             <div class="mb-[24px] lg:mb-[40px]">
-                <h4 class="text-sm lg:text-lg xl:text-2xl text-yellow font-extrabold text-center">
+                <h4 class="text-sm lg:text-lg xl:text-xl text-yellow font-extrabold text-center">
                     NEWSLETTER
                 </h4>
                 <h3
                     class="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-secondary mx-auto text-center leading-none pt-[10px] pb-[20px]">
                     Sign up to our newsletter
                 </h3>
-                <p class="text-base text-dark mx-auto text-center font-semibold max-w-[777px]">
+                <p class="text-base text-dark mx-auto text-center font-semibold max-w-[263px] lg:max-w-[777px]">
                     Stay updated with the latest news, insights and offers from The Business Hub.
                 </p>
             </div>
@@ -699,6 +699,7 @@ get_header(); ?>
                 <div class="w-full lg:w-1/4 ">
                     <input type="text" name="lastname" placeholder="Last Name"
                         class="w-full px-6 py-[14px] rounded-[15px] border-[2px] bg-[#FCFCFC] border-[#D9D9D9] text-dark focus:outline-none focus:border-[#359327] focus:ring-2 focus:ring-[#359327] transition-all placeholder-[#14505E] text-base font-semibold">
+
                 </div>
 
                 <!-- Email Input -->
@@ -716,8 +717,8 @@ get_header(); ?>
                 </div>
 
             </form>
-            <p class="text-sm lg:text-base text-dark font-semibold mt-[18px]">By signing up you are agreeing to receive
-                emails
+            <p class="text-sm lg:text-base text-dark font-semibold mt-[18px] max-w-[350px] lg:max-w-full">By signing up
+                you are agreeing to receive emails
                 from The
                 Business Hub, you can unsubscribe at any time.</p>
 

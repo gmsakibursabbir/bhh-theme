@@ -63,9 +63,9 @@
 
 
     </div>
-    <div class="pt-[34px]">
-      <p class="text-xs font-extrabold text-white max-w-[600px] leading-5">&copy; The <?php bloginfo('name'); ?> <?php echo date('Y'); ?> . All Rights Reserved.</p>
-      <p class="text-xs font-extrabold text-white max-w-[600px] leading-5">Registered office: Building 6000, Langstone Technology
+    <div class="pt-[68px] lg:pt-[34px] ">
+      <p class="text-xs font-extrabold text-white max-w-[377px] lg:max-w-[600px] leading-5">&copy; The <?php bloginfo('name'); ?> <?php echo date('Y'); ?> . All Rights Reserved.</p>
+      <p class="text-xs font-extrabold text-white max-w-[377px] lg:max-w-[600px] leading-5">Registered office: Building 6000, Langstone Technology
         Park, Langstone Road, Havant PO9 1SA
         Registered in England and Wales, Company No. 16093355</p>
     </div>

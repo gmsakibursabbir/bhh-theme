@@ -359,7 +359,7 @@ const MultiStepForm = () => {
         {/* STEP 1 */}
         {step === 1 && (
           <div className={isAnimating ? "animate-fade-out" : "animate-fade-in"}>
-            <h2 className="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-[#359327] text-center mb-[17px] lg:mb-5">
+            <h2 className="text-[28px] lg:text-[34px] xl:text-[40px] leading-[36px] lg:leading-tight font-extrabold text-[#359327] text-center mb-[17px] lg:mb-5">
               How many handsets or SIMs do you require?
             </h2>
             <p className="text-center text-dark font-semibold mb-[37px] lg:mb-[68px]">
@@ -405,7 +405,7 @@ const MultiStepForm = () => {
         {/* STEP 2 */}
         {step === 2 && (
           <div className={isAnimating ? "animate-fade-out" : "animate-fade-in"}>
-            <h2 className="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-[#359327] text-center mb-[17px] lg:mb-5">
+            <h2 className="text-[28px] lg:text-[34px] xl:text-[40px] leading-[36px] lg:leading-tight font-extrabold text-[#359327] text-center mb-[17px] lg:mb-5">
               When does your current contract expire?
             </h2>
             <p className="text-center text-dark font-semibold mb-[37px] lg:mb-[68px]">
@@ -451,7 +451,7 @@ const MultiStepForm = () => {
         {/* STEP 3 */}
         {step === 3 && (
           <div className={isAnimating ? "animate-fade-out" : "animate-fade-in"}>
-            <h2 className="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-[#359327] text-center mb-[17px] lg:mb-5">
+            <h2 className="text-[28px] lg:text-[34px] xl:text-[40px] leading-[36px] lg:leading-tight font-extrabold text-[#359327] text-center mb-[17px] lg:mb-5">
               What type of business are you?
             </h2>
             <p className="text-center text-dark font-semibold mb-[37px] lg:mb-[68px]">
@@ -501,12 +501,12 @@ const MultiStepForm = () => {
               isAnimating ? "animate-fade-out" : "animate-fade-in"
             } max-w-[947px] mx-auto`}
           >
-            <h2 className="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-[#359327] text-center mb-[17px] lg:mb-5">
+            <h2 className="text-[28px] lg:text-[34px] xl:text-[40px] leading-[36px] lg:leading-tight font-extrabold text-[#359327] text-center mb-[47px] lg:mb-[73px]">
               Tell us about your business
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-[26px] lg:gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
               <div>
-                <label className="block text-primary font-bold mb-2">
+                <label className="block text-primary text-base lg:text-xl font-extrabold mb-2 lg:mb-[14px]">
                   Your business name *
                 </label>
                 <input
@@ -515,11 +515,11 @@ const MultiStepForm = () => {
                   value={formData.businessName}
                   onChange={handleChange}
                   placeholder="Your business name"
-                  className="w-full px-4 py-3 rounded-xl border-[2px] border-[#D9D9D9] focus:border-[#359327] focus:ring-2 focus:ring-[#359327] outline-none bg-[#FCFCFC] placeholder:text-[#D9D9D9] placeholder:font-extrabold"
+                  className="w-full px-4 py-3 rounded-xl border-[2px] border-[#D9D9D9] focus:border-[#359327] focus:ring-2 focus:ring-[#359327] outline-none bg-[#FCFCFC] placeholder:text-[#D9D9D9] font-extrabold text-dark"
                 />
               </div>
               <div>
-                <label className="block text-primary font-bold mb-2">
+                <label className="block text-primary text-base lg:text-xl font-extrabold mb-2 lg:mb-[14px]">
                   Enter your postcode *
                 </label>
                 <input
@@ -527,8 +527,8 @@ const MultiStepForm = () => {
                   name="postcode"
                   value={formData.postcode}
                   onChange={handleChange}
-                  placeholder="Postcode"
-                  className="w-full px-4 py-3 rounded-xl border-[2px] border-[#D9D9D9] focus:border-[#359327] focus:ring-2 focus:ring-[#359327] outline-none bg-[#FCFCFC] placeholder:text-[#D9D9D9] placeholder:font-extrabold"
+                  placeholder="Postcode (so we can find the best supplier)"
+                  className="w-full px-4 py-3 rounded-xl border-[2px] border-[#D9D9D9] focus:border-[#359327] focus:ring-2 focus:ring-[#359327] outline-none bg-[#FCFCFC] placeholder:text-[#D9D9D9] font-extrabold text-dark"
                 />
               </div>
             </div>
@@ -542,12 +542,12 @@ const MultiStepForm = () => {
               isAnimating ? "animate-fade-out" : "animate-fade-in"
             } max-w-[947px] mx-auto`}
           >
-            <h2 className="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-[#359327] text-center mb-[17px] lg:mb-5">
+            <h2 className="text-[28px] lg:text-[34px] xl:text-[40px] leading-[36px] lg:leading-tight font-extrabold text-[#359327] text-center mb-[47px] lg:mb-[73px]">
               Tell us about you
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-[26px] lg:gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
               <div>
-                <label className="block text-primary font-bold mb-2">
+                <label className="block text-primary text-base lg:text-xl font-extrabold mb-2 lg:mb-[14px]">
                   First name *
                 </label>
                 <input
@@ -556,11 +556,11 @@ const MultiStepForm = () => {
                   value={formData.firstName}
                   onChange={handleChange}
                   placeholder="First name"
-                  className="w-full px-4 py-3 rounded-xl border-[2px] border-[#D9D9D9] focus:border-[#359327] focus:ring-2 focus:ring-[#359327] outline-none bg-[#FCFCFC] placeholder:text-[#D9D9D9] placeholder:font-extrabold"
+                  className="w-full px-4 py-3 rounded-xl border-[2px] border-[#D9D9D9] focus:border-[#359327] focus:ring-2 focus:ring-[#359327] outline-none bg-[#FCFCFC] placeholder:text-[#D9D9D9] font-extrabold text-dark"
                 />
               </div>
               <div>
-                <label className="block text-primary font-bold mb-2">
+                <label className="block text-primary text-base lg:text-xl font-extrabold mb-2 lg:mb-[14px]">
                   Last name *
                 </label>
                 <input
@@ -569,11 +569,11 @@ const MultiStepForm = () => {
                   value={formData.lastName}
                   onChange={handleChange}
                   placeholder="Last name"
-                  className="w-full px-4 py-3 rounded-xl border-[2px] border-[#D9D9D9] focus:border-[#359327] focus:ring-2 focus:ring-[#359327] outline-none bg-[#FCFCFC] placeholder:text-[#D9D9D9] placeholder:font-extrabold"
+                  className="w-full px-4 py-3 rounded-xl border-[2px] border-[#D9D9D9] focus:border-[#359327] focus:ring-2 focus:ring-[#359327] outline-none bg-[#FCFCFC] placeholder:text-[#D9D9D9] font-extrabold text-dark"
                 />
               </div>
               <div>
-                <label className="block text-primary font-bold mb-2">
+                <label className="block text-primary text-base lg:text-xl font-extrabold mb-2 lg:mb-[14px]">
                   Business email *
                 </label>
                 <input
@@ -582,11 +582,11 @@ const MultiStepForm = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Business email"
-                  className="w-full px-4 py-3 rounded-xl border-[2px] border-[#D9D9D9] focus:border-[#359327] focus:ring-2 focus:ring-[#359327] outline-none bg-[#FCFCFC] placeholder:text-[#D9D9D9] placeholder:font-extrabold"
+                  className="w-full px-4 py-3 rounded-xl border-[2px] border-[#D9D9D9] focus:border-[#359327] focus:ring-2 focus:ring-[#359327] outline-none bg-[#FCFCFC] placeholder:text-[#D9D9D9] font-extrabold text-dark"
                 />
               </div>
               <div>
-                <label className="block text-primary font-bold mb-2">
+                <label className="block text-primary text-base lg:text-xl font-extrabold mb-2 lg:mb-[14px]">
                   Contact number *
                 </label>
                 <input
@@ -595,7 +595,7 @@ const MultiStepForm = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="Contact number"
-                  className="w-full px-4 py-3 rounded-xl border-[2px] border-[#D9D9D9] focus:border-[#359327] focus:ring-2 focus:ring-[#359327] outline-none bg-[#FCFCFC] placeholder:text-[#D9D9D9] placeholder:font-extrabold"
+                  className="w-full px-4 py-3 rounded-xl border-[2px] border-[#D9D9D9] focus:border-[#359327] focus:ring-2 focus:ring-[#359327] outline-none bg-[#FCFCFC] placeholder:text-[#D9D9D9] font-extrabold text-dark"
                 />
               </div>
             </div>
@@ -625,17 +625,17 @@ const MultiStepForm = () => {
         {/* footer */}
         {/* Footer Text */}
         {step === 1 && (
-          <p className="text-center text-[#92D93E] font-extrabold mt-[36px] lg:mt-[20px] text-xl">
+          <p className="text-center text-[#92D93E] font-extrabold mt-[6px] lg:mt-[20px] lg:text-xl">
             Get free no obligation quotes in minutes.
           </p>
         )}
         {step === 2 && (
-          <p className="text-center text-[#92D93E] font-extrabold mt-[36px] lg:mt-[20px] text-xl">
+          <p className="text-center text-[#92D93E] font-extrabold mt-[6px] lg:mt-[20px] lg:text-xl">
             We compare all major UK networks so you don't have to.
           </p>
         )}
         {step === 3 && (
-          <p className="text-center text-[#92D93E] font-extrabold mt-[36px] lg:mt-[20px] text-xl">
+          <p className="text-center text-[#92D93E] font-extrabold mt-[6px] lg:mt-[20px] lg:text-xl">
             We have helped thousands of businesses find the best solution
           </p>
         )}
