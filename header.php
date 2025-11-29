@@ -104,10 +104,10 @@ if (!defined('ABSPATH')) {
           <li><a href="<?php echo get_home_url(); ?>/#services"
               class="hover:text-yellow-400 transition-colors">Services</a></li>
           <li><a href="#resources" class="hover:text-yellow-400 transition-colors">Resources</a></li>
-          <li><a href="#contact" class="hover:text-yellow-400 transition-colors">Contact us</a></li>
+          <li><a href="#newsletter" class="hover:text-yellow-400 transition-colors">Contact us</a></li>
           <li>
             <!-- Button -->
-            <a href="#"
+            <a href="/business-mobile/#get-started"
               class="bg-[#FFDC46] text-black text-base font-extrabold leading-none inline-flex flex-row justify-center items-center min-h-[53px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-white hover:text-dark">
               Start your quote
             </a>
@@ -160,11 +160,14 @@ if (!defined('ABSPATH')) {
           <ul class="flex flex-col justify-center items-center gap-5 text-[18px] font-semibold text-white">
             <li><a href="<?php echo get_home_url(); ?>"
                 class="mobile-nav-link block hover:text-[#92D93E] transition-colors">Home</a></li>
-            <li><a href="#" class="mobile-nav-link block hover:text-[#92D93E] transition-colors">Services</a></li>
-            <li><a href="#" class="mobile-nav-link block hover:text-[#92D93E] transition-colors">Resources</a></li>
-            <li><a href="#" class="mobile-nav-link block hover:text-[#92D93E] transition-colors">Contact us</a></li>
+            <li><a href="#services" class="mobile-nav-link block hover:text-[#92D93E] transition-colors">Services</a>
+            </li>
+            <li><a href="#resources" class="mobile-nav-link block hover:text-[#92D93E] transition-colors">Resources</a>
+            </li>
+            <li><a href="#newsletter" class="mobile-nav-link block hover:text-[#92D93E] transition-colors">Contact
+                us</a></li>
             <li class="pt-4">
-              <a href="#"
+              <a href="/business-mobile/#get-started"
                 class="mobile-nav-link bg-yellow text-black text-base font-extrabold leading-none inline-flex w-full justify-center items-center min-h-[48px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-white hover:text-black">
                 Start your quote
               </a>

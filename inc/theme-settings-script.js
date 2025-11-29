@@ -399,7 +399,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (field.type === "image") {
         code += `if ($val) {\n`;
-        code += `    echo '<img src="' . esc_url($val) . '" alt="' . esc_attr($val) . '">';\n`;
+        code += `    echo esc_url($val);\n`;
         code += `}\n`;
       } else if (field.type === "url") {
         code += `if ($val) {\n`;

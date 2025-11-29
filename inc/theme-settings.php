@@ -88,7 +88,8 @@ function bh_render_theme_settings_page()
             $imported_settings = json_decode($json_content, true);
             if (json_last_error() === JSON_ERROR_NONE && is_array($imported_settings)) {
                 update_option('bh_theme_settings', $imported_settings);
-                echo '<div class="notice notice-success is-dismissible"><p>Settings imported successfully!</p></div>';
+                echo '<div class="notice notice-success is-dismissible"><p>Settings imported successfully! Reloading page...</p></div>';
+                echo '<script>setTimeout(function(){ window.location.reload(); }, 1500);</script>';
             } else {
                 echo '<div class="notice notice-error is-dismissible"><p>Invalid JSON format.</p></div>';
             }
@@ -179,7 +180,8 @@ function bh_render_theme_settings_page()
                                             <option value="">-- Choose a Template to Edit --</option>
 
                                             <optgroup label="Special Templates">
-                                                <option value="front-page" <?php selected($active_page, 'front-page'); ?>>🏠 Front Page (Home)</option>
+                                                <option value="front-page" <?php selected($active_page, 'front-page'); ?>>🏠
+                                                    Front Page (Home)</option>
                                                 <option value="business-mobile" <?php selected($active_page, 'business-mobile'); ?>>📱 Business Mobile Page</option>
                                             </optgroup>
 

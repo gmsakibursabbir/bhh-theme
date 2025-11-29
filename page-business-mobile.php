@@ -101,7 +101,8 @@ get_header(); ?>
                 if ($val) {
                   echo esc_url($val);
                 }
-                ?>" class="bg-accent text-dark text-sm lg:text-base font-extrabold leading-none inline-flex flex-row justify-between items-center gap-6 lg:gap-[46px] min-h-[42px] lg:min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white mt-[30px] lg:mt-[52px] shadow-xl"><span>See
+                ?>"
+                  class="bg-accent text-dark text-sm lg:text-base font-extrabold leading-none inline-flex flex-row justify-between items-center gap-6 lg:gap-[46px] min-h-[42px] lg:min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white mt-[30px] lg:mt-[52px] shadow-xl"><span>See
                     what you could save</span> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14"
                     fill="none" viewBox="0 0 12 14" class="max-w-[7px] lg:max-w-[10px]">
                     <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
@@ -182,7 +183,8 @@ get_header(); ?>
                 if ($val) {
                   echo esc_url($val);
                 }
-                ?>" class="bg-accent text-dark text-sm lg:text-base font-extrabold leading-none inline-flex flex-row justify-between items-center gap-6 lg:gap-[46px] min-h-[42px] lg:min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white mt-[30px] lg:mt-[52px] shadow-xl"><span>See
+                ?>"
+                  class="bg-accent text-dark text-sm lg:text-base font-extrabold leading-none inline-flex flex-row justify-between items-center gap-6 lg:gap-[46px] min-h-[42px] lg:min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white mt-[30px] lg:mt-[52px] shadow-xl"><span>See
                     what you could save</span> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14"
                     fill="none" viewBox="0 0 12 14" class="max-w-[7px] lg:max-w-[10px]">
                     <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
@@ -264,7 +266,8 @@ get_header(); ?>
                 if ($val) {
                   echo esc_url($val);
                 }
-                ?>" class="bg-accent text-dark text-sm lg:text-base font-extrabold leading-none inline-flex flex-row justify-between items-center gap-6 lg:gap-[46px] min-h-[42px] lg:min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white mt-[30px] lg:mt-[52px] shadow-xl"><span>See
+                ?>"
+                  class="bg-accent text-dark text-sm lg:text-base font-extrabold leading-none inline-flex flex-row justify-between items-center gap-6 lg:gap-[46px] min-h-[42px] lg:min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white mt-[30px] lg:mt-[52px] shadow-xl"><span>See
                     what you could save</span> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14"
                     fill="none" viewBox="0 0 12 14" class="max-w-[7px] lg:max-w-[10px]">
                     <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
@@ -344,7 +347,8 @@ get_header(); ?>
                 if ($val) {
                   echo esc_url($val);
                 }
-                ?>" class="bg-accent text-dark text-sm lg:text-base font-extrabold leading-none inline-flex flex-row justify-between items-center gap-6 lg:gap-[46px] min-h-[42px] lg:min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white mt-[30px] lg:mt-[52px] shadow-xl"><span>See
+                ?>"
+                  class="bg-accent text-dark text-sm lg:text-base font-extrabold leading-none inline-flex flex-row justify-between items-center gap-6 lg:gap-[46px] min-h-[42px] lg:min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white mt-[30px] lg:mt-[52px] shadow-xl"><span>See
                     what you could save</span> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14"
                     fill="none" viewBox="0 0 12 14" class="max-w-[7px] lg:max-w-[10px]">
                     <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
@@ -425,7 +429,8 @@ get_header(); ?>
                 if ($val) {
                   echo esc_url($val);
                 }
-                ?>" class="bg-accent text-dark text-sm lg:text-base font-extrabold leading-none inline-flex flex-row justify-between items-center gap-6 lg:gap-[46px] min-h-[42px] lg:min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white mt-[30px] lg:mt-[52px] shadow-xl"><span>See
+                ?>"
+                  class="bg-accent text-dark text-sm lg:text-base font-extrabold leading-none inline-flex flex-row justify-between items-center gap-6 lg:gap-[46px] min-h-[42px] lg:min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white mt-[30px] lg:mt-[52px] shadow-xl"><span>See
                     what you could save</span> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14"
                     fill="none" viewBox="0 0 12 14" class="max-w-[7px] lg:max-w-[10px]">
                     <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
@@ -506,7 +511,8 @@ get_header(); ?>
                 if ($val) {
                   echo esc_url($val);
                 }
-                ?>" class="bg-accent text-dark text-sm lg:text-base font-extrabold leading-none inline-flex flex-row justify-between items-center gap-6 lg:gap-[46px] min-h-[42px] lg:min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white mt-[30px] lg:mt-[52px] shadow-xl"><span>See
+                ?>"
+                  class="bg-accent text-dark text-sm lg:text-base font-extrabold leading-none inline-flex flex-row justify-between items-center gap-6 lg:gap-[46px] min-h-[42px] lg:min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white mt-[30px] lg:mt-[52px] shadow-xl"><span>See
                     what you could save</span> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14"
                     fill="none" viewBox="0 0 12 14" class="max-w-[7px] lg:max-w-[10px]">
                     <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
@@ -526,7 +532,7 @@ get_header(); ?>
     </div>
   </section>
   <!-- product showcase -->
-  <section>
+  <section id="get-started">
     <div class=" pt-10 pb-11 lg:pt-[75px] lg:pb-[120px]">
       <!-- top -->
       <div class="w-full lg:max-w-[1155px] mx-auto px-5 lg:px-0">
@@ -727,8 +733,23 @@ get_header(); ?>
     <div
       class="w-full lg:max-w-[1444px] px-[25px] mx-auto flex flex-col lg:flex-row justify-between items-center gap-[50px] lg:gap-[68px]">
       <div class="w-full lg:w-1/2">
-        <img src="<?php echo esc_url(get_theme_file_uri('assets/media/mobile-support.png')); ?>" alt="about image"
-          class="w-full h-full" />
+        <img src="<?php
+        // Get settings
+        $settings = get_option('bh_theme_settings');
+        $fields = isset($settings['business-mobile']) ? $settings['business-mobile'] : [];
+
+        // --- Field: Mobile Support Image (mobile_support_image) ---
+        $val = '';
+        foreach ($fields as $f) {
+          if ($f['name'] === 'mobile_support_image') {
+            $val = $f['value'];
+            break;
+          }
+        }
+        if ($val) {
+          echo esc_url($val);
+        }
+        ?>" alt="about image" class="w-full h-full" />
       </div>
       <div class="w-full lg:w-1/2 text-center lg:text-left">
         <h2
@@ -1169,16 +1190,31 @@ get_header(); ?>
           </div>
         </div>
         <div class="w-full lg:w-[55%]  order-1 lg:order-2">
-          <img src="<?php echo esc_url(get_theme_file_uri('assets/media/work-demo.png')); ?>" alt="work demo image"
-            class="w-full h-full">
+          <img src="<?php
+          // Get settings
+          $settings = get_option('bh_theme_settings');
+          $fields = isset($settings['business-mobile']) ? $settings['business-mobile'] : [];
+
+          // --- Field: Mobile Section Mini Image (mobile_section_mini_image) ---
+          $val = '';
+          foreach ($fields as $f) {
+            if ($f['name'] === 'mobile_section_mini_image') {
+              $val = $f['value'];
+              break;
+            }
+          }
+          if ($val) {
+            echo esc_url($val);
+          }
+          ?>" alt="work demo image" class="w-full h-full">
         </div>
       </div>
     </div>
   </section>
   <!-- blog -->
-  <section class="pt-[53px] pb-[50px] lg:pt-10 lg:pb-[70px] bg-light-gray">
+  <section class="pt-[53px] pb-[50px] lg:pt-10 lg:pb-[70px] bg-light-gray" id="resources">
     <div class="w-full lg:max-w-[1200px] mx-auto px-[25px]">
-      <div class="mb-[30px] lg:mb-[83px]">
+      <div class="mb-[30px] lg:mb-[86px]">
         <h4 class="text-sm lg:text-lg xl:text-xl text-yellow font-extrabold text-center">
           <?php
           // Get settings
@@ -1375,7 +1411,7 @@ get_header(); ?>
   </section>
 
   <!-- newsletter -->
-  <section class="pt-[64px] pb-[32px] lg:pt-[67px] lg:pb-[85px]">
+  <section class="pt-[64px] pb-[32px] lg:pt-[67px] lg:pb-[85px]" id="newsletter">
     <div class="w-full lg:max-w-[1378px] lg:px-0 px-[25px] mx-auto">
       <div class="mb-[24px] lg:mb-[40px]">
         <h4 class="text-sm lg:text-lg xl:text-xl text-yellow font-extrabold text-center">

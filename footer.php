@@ -20,7 +20,7 @@
                 class="w-[28px] h-[28px] lg:w-[35px] lg:h-[35px]"></a></li>
         </ul>
         <ul class="flex flex-col xl:flex-row xl:items-center gap-4 lg:gap-5">
-          <li><a href="#"
+          <li><a href="/business-mobile/#get-started"
               class="inline-flex justify-center items-center px-5 min-h-[40px] bg-[#FFDC46] border-[2px] border-[#FFDC46]  hover:bg-[#002115] text-[#002115] rounded-full font-extrabold text-[13px] hover:text-[#FFDC46] transition-all ease-in-out duration-300">Get
               started and start saving</a></li>
           <li><a href="mailto:info@thebusinesshub.co.uk"
@@ -46,10 +46,14 @@
       </div>
       <div class="w-1/2 lg:w-1/5">
         <ul class="flex flex-col gap-y-4 lg:gap-y-8 text-white font-extrabold text-base ">
-          <li><a href="#" class="hover:text-[#FFDC46] transition-all ease-in-out duration-300">About us</a></li>
-          <li><a href="#" class="hover:text-[#FFDC46] transition-all ease-in-out duration-300">Services</a></li>
-          <li><a href="#" class="hover:text-[#FFDC46] transition-all ease-in-out duration-300">Resources</a></li>
-          <li><a href="#" class="hover:text-[#FFDC46] transition-all ease-in-out duration-300">Contact us</a></li>
+          <li><a href="<?php echo get_home_url(); ?>/#about"
+              class="hover:text-[#FFDC46] transition-all ease-in-out duration-300">About us</a></li>
+          <li><a href="<?php echo get_home_url(); ?>/#services"
+              class="hover:text-[#FFDC46] transition-all ease-in-out duration-300">Services</a></li>
+          <li><a href="#resources" class="hover:text-[#FFDC46] transition-all ease-in-out duration-300">Resources</a>
+          </li>
+          <li><a href="#newsletter" class="hover:text-[#FFDC46] transition-all ease-in-out duration-300">Contact us</a>
+          </li>
         </ul>
       </div>
       <div class="w-1/2 lg:w-1/5">

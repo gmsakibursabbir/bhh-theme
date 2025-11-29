@@ -35,7 +35,7 @@ get_header(); ?>
         </div>
     </section>
     <!-- newsletter -->
-    <section class="pt-[64px] pb-[32px] lg:pt-[67px] lg:pb-[85px]">
+    <section class="pt-[64px] pb-[32px] lg:pt-[67px] lg:pb-[85px]" id="newsletter">
         <div class="w-full lg:max-w-[1378px] lg:px-0 px-[25px] mx-auto">
             <div class="mb-[24px] lg:mb-[40px]">
                 <h4 class="text-sm lg:text-lg xl:text-xl text-yellow font-extrabold text-center">
