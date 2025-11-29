@@ -32,7 +32,23 @@ get_header(); ?>
               <div class="w-full lg:w-1/2 text-white px-[25px] md:px-0 pt-[111px] md:pt-0">
                 <h1
                   class="text-[30px] lg:text-[36px] xl:text-[44px] font-bold leading-[36px] lg:leading-[58px] lg:max-w-[491px]">
-                  Compare the leading UK mobile networks.
+                  <?php
+                  // Get settings
+                  $settings = get_option('bh_theme_settings');
+                  $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                  // --- Field: Hero slide 1 Title (hero_slide_1_title) ---
+                  $val = '';
+                  foreach ($fields as $f) {
+                    if ($f['name'] === 'hero_slide_1_title') {
+                      $val = $f['value'];
+                      break;
+                    }
+                  }
+                  if ($val) {
+                    echo wp_kses_post($val);
+                  }
+                  ?>
                 </h1>
                 <ul class="flex flex-row items-center gap-[10px] lg:gap-5 py-[20px] lg:py-[28px]">
                   <li><img src="<?php echo esc_url(get_theme_file_uri('assets/media/Vodafone.svg')); ?>" alt="Vodafore"
@@ -46,10 +62,41 @@ get_header(); ?>
                 </ul>
                 <p
                   class="text-white text-[18px] lg:text-[24px] xl:text-[32px] font-normal lg:font-bold max-w-[252px] md:max-w-[466px] leading-[24px] lg:leading-[46px]">
-                  Quickly and easily get the best business mobile deal for your business.
+                  <?php
+                  // Get settings
+                  $settings = get_option('bh_theme_settings');
+                  $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                  // --- Field: Hero slide 1 Pera (hero_slide_1_pera) ---
+                  $val = '';
+                  foreach ($fields as $f) {
+                    if ($f['name'] === 'hero_slide_1_pera') {
+                      $val = $f['value'];
+                      break;
+                    }
+                  }
+                  if ($val) {
+                    echo wp_kses_post($val);
+                  }
+                  ?>
                 </p>
-                <a href="#"
-                  class="bg-accent text-dark text-sm lg:text-base font-extrabold leading-none inline-flex flex-row justify-between items-center gap-6 lg:gap-[46px] min-h-[42px] lg:min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white mt-[30px] lg:mt-[52px] shadow-xl"><span>See
+                <a href="<?php
+                // Get settings
+                $settings = get_option('bh_theme_settings');
+                $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                // --- Field: Hero slide 1 Link (hero_slide_1_link) ---
+                $val = '';
+                foreach ($fields as $f) {
+                  if ($f['name'] === 'hero_slide_1_link') {
+                    $val = $f['value'];
+                    break;
+                  }
+                }
+                if ($val) {
+                  echo esc_url($val);
+                }
+                ?>" class="bg-accent text-dark text-sm lg:text-base font-extrabold leading-none inline-flex flex-row justify-between items-center gap-6 lg:gap-[46px] min-h-[42px] lg:min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white mt-[30px] lg:mt-[52px] shadow-xl"><span>See
                     what you could save</span> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14"
                     fill="none" viewBox="0 0 12 14" class="max-w-[7px] lg:max-w-[10px]">
                     <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
@@ -75,15 +122,62 @@ get_header(); ?>
               <div class="w-full lg:w-1/2 text-white px-[25px] md:px-0 ">
                 <h1
                   class="text-[30px] lg:text-[36px] xl:text-[44px] font-bold leading-[36px] lg:leading-[58px] lg:max-w-[491px]">
-                  Take control of your business telecom and IT services.
+                  <?php
+                  // Get settings
+                  $settings = get_option('bh_theme_settings');
+                  $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                  // --- Field: Hero slide 2 Title (hero_slide_2_title) ---
+                  $val = '';
+                  foreach ($fields as $f) {
+                    if ($f['name'] === 'hero_slide_2_title') {
+                      $val = $f['value'];
+                      break;
+                    }
+                  }
+                  if ($val) {
+                    echo wp_kses_post($val);
+                  }
+                  ?>
                 </h1>
 
                 <p
                   class="text-white text-[18px] lg:text-[24px] xl:text-[32px] font-normal lg:font-bold max-w-[252px] md:max-w-[466px] leading-[24px] lg:leading-[46px] mt-[20px] lg:mt-[28px]">
-                  Let us find you the best options, quickly and easily.
+                  <?php
+                  // Get settings
+                  $settings = get_option('bh_theme_settings');
+                  $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                  // --- Field: Hero slide 2 Pera (hero_slide_2_pera) ---
+                  $val = '';
+                  foreach ($fields as $f) {
+                    if ($f['name'] === 'hero_slide_2_pera') {
+                      $val = $f['value'];
+                      break;
+                    }
+                  }
+                  if ($val) {
+                    echo wp_kses_post($val);
+                  }
+                  ?>
                 </p>
-                <a href="#"
-                  class="bg-accent text-dark text-sm lg:text-base font-extrabold leading-none inline-flex flex-row justify-between items-center gap-6 lg:gap-[46px] min-h-[42px] lg:min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white mt-[30px] lg:mt-[52px] shadow-xl"><span>See
+                <a href="<?php
+                // Get settings
+                $settings = get_option('bh_theme_settings');
+                $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                // --- Field: Hero slide 2 Link (hero_slide_2_link) ---
+                $val = '';
+                foreach ($fields as $f) {
+                  if ($f['name'] === 'hero_slide_2_link') {
+                    $val = $f['value'];
+                    break;
+                  }
+                }
+                if ($val) {
+                  echo esc_url($val);
+                }
+                ?>" class="bg-accent text-dark text-sm lg:text-base font-extrabold leading-none inline-flex flex-row justify-between items-center gap-6 lg:gap-[46px] min-h-[42px] lg:min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white mt-[30px] lg:mt-[52px] shadow-xl"><span>See
                     what you could save</span> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14"
                     fill="none" viewBox="0 0 12 14" class="max-w-[7px] lg:max-w-[10px]">
                     <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
@@ -109,15 +203,63 @@ get_header(); ?>
               <div class="w-full lg:w-1/2 text-white px-[25px] md:px-0 pt-[111px] md:pt-0">
                 <h1
                   class="text-[30px] lg:text-[36px] xl:text-[44px] font-bold leading-[36px] lg:leading-[58px] lg:max-w-[491px]">
-                  Take control of your business telecom and IT services.
+                  <?php
+                  // Get settings
+                  $settings = get_option('bh_theme_settings');
+                  $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                  // --- Field: Hero slide 3 Title (hero_slide_3_title) ---
+                  $val = '';
+                  foreach ($fields as $f) {
+                    if ($f['name'] === 'hero_slide_3_title') {
+                      $val = $f['value'];
+                      break;
+                    }
+                  }
+                  if ($val) {
+                    echo wp_kses_post($val);
+                  }
+                  ?>
                 </h1>
 
                 <p
                   class="text-white text-[18px] lg:text-[24px] xl:text-[32px] font-normal lg:font-bold max-w-[252px] md:max-w-[466px] leading-[24px] lg:leading-[46px] mt-[20px] lg:mt-[28px]">
-                  Let us find you the best options, quickly and easily.
+                  <?php
+                  // Get settings
+                  $settings = get_option('bh_theme_settings');
+                  $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                  // --- Field: Hero slide 3 Pera (hero_slide_3_pera) ---
+                  $val = '';
+                  foreach ($fields as $f) {
+                    if ($f['name'] === 'hero_slide_3_pera') {
+                      $val = $f['value'];
+                      break;
+                    }
+                  }
+                  if ($val) {
+                    echo wp_kses_post($val);
+                  }
+                  ?>
                 </p>
-                <a href="#"
-                  class="bg-accent text-dark text-sm lg:text-base font-extrabold leading-none inline-flex flex-row justify-between items-center gap-6 lg:gap-[46px] min-h-[42px] lg:min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white mt-[30px] lg:mt-[52px] shadow-xl"><span>See
+                <a href="
+                <?php
+                // Get settings
+                $settings = get_option('bh_theme_settings');
+                $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                // --- Field: Hero slide 3 Link (hero_slide_3_link) ---
+                $val = '';
+                foreach ($fields as $f) {
+                  if ($f['name'] === 'hero_slide_3_link') {
+                    $val = $f['value'];
+                    break;
+                  }
+                }
+                if ($val) {
+                  echo esc_url($val);
+                }
+                ?>" class="bg-accent text-dark text-sm lg:text-base font-extrabold leading-none inline-flex flex-row justify-between items-center gap-6 lg:gap-[46px] min-h-[42px] lg:min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white mt-[30px] lg:mt-[52px] shadow-xl"><span>See
                     what you could save</span> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14"
                     fill="none" viewBox="0 0 12 14" class="max-w-[7px] lg:max-w-[10px]">
                     <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
@@ -142,15 +284,62 @@ get_header(); ?>
               <div class="w-full lg:w-1/2 text-white px-[25px] md:px-0 pt-[111px] md:pt-0">
                 <h1
                   class="text-[30px] lg:text-[36px] xl:text-[44px] font-bold leading-[36px] lg:leading-[58px] lg:max-w-[491px]">
-                  Smarter business connectivity in seconds
+                  <?php
+                  // Get settings
+                  $settings = get_option('bh_theme_settings');
+                  $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                  // --- Field: Hero slide 4 Title (hero_slide_4_title) ---
+                  $val = '';
+                  foreach ($fields as $f) {
+                    if ($f['name'] === 'hero_slide_4_title') {
+                      $val = $f['value'];
+                      break;
+                    }
+                  }
+                  if ($val) {
+                    echo wp_kses_post($val);
+                  }
+                  ?>
                 </h1>
 
                 <p
                   class="text-white text-[18px] lg:text-[24px] xl:text-[32px] font-normal lg:font-bold max-w-[252px] md:max-w-[466px] leading-[24px] lg:leading-[46px] mt-[20px] lg:mt-[28px]">
-                  No stress or disruption. Just one simple enquiry form that takes less than a minute to complete.
+                  <?php
+                  // Get settings
+                  $settings = get_option('bh_theme_settings');
+                  $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                  // --- Field: Hero slide 4 Pera (hero_slide_4_pera) ---
+                  $val = '';
+                  foreach ($fields as $f) {
+                    if ($f['name'] === 'hero_slide_4_pera') {
+                      $val = $f['value'];
+                      break;
+                    }
+                  }
+                  if ($val) {
+                    echo wp_kses_post($val);
+                  }
+                  ?>
                 </p>
-                <a href="#"
-                  class="bg-accent text-dark text-sm lg:text-base font-extrabold leading-none inline-flex flex-row justify-between items-center gap-6 lg:gap-[46px] min-h-[42px] lg:min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white mt-[30px] lg:mt-[52px] shadow-xl"><span>See
+                <a href="<?php
+                // Get settings
+                $settings = get_option('bh_theme_settings');
+                $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                // --- Field: Hero slide 4 Link (hero_slide_4_link) ---
+                $val = '';
+                foreach ($fields as $f) {
+                  if ($f['name'] === 'hero_slide_4_link') {
+                    $val = $f['value'];
+                    break;
+                  }
+                }
+                if ($val) {
+                  echo esc_url($val);
+                }
+                ?>" class="bg-accent text-dark text-sm lg:text-base font-extrabold leading-none inline-flex flex-row justify-between items-center gap-6 lg:gap-[46px] min-h-[42px] lg:min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white mt-[30px] lg:mt-[52px] shadow-xl"><span>See
                     what you could save</span> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14"
                     fill="none" viewBox="0 0 12 14" class="max-w-[7px] lg:max-w-[10px]">
                     <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
@@ -176,15 +365,62 @@ get_header(); ?>
               <div class="w-full lg:w-1/2 text-white px-[25px] md:px-0 pt-[111px] md:pt-0">
                 <h1
                   class="text-[30px] lg:text-[36px] xl:text-[44px] font-bold leading-[36px] lg:leading-[58px] lg:max-w-[491px]">
-                  Make smarter business telecom decisions in seconds.
+                  <?php
+                  // Get settings
+                  $settings = get_option('bh_theme_settings');
+                  $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                  // --- Field: Hero slide 5 Title (hero_slide_5_title) ---
+                  $val = '';
+                  foreach ($fields as $f) {
+                    if ($f['name'] === 'hero_slide_5_title') {
+                      $val = $f['value'];
+                      break;
+                    }
+                  }
+                  if ($val) {
+                    echo wp_kses_post($val);
+                  }
+                  ?>
                 </h1>
 
                 <p
                   class="text-white text-[18px] lg:text-[24px] xl:text-[32px] font-normal lg:font-bold max-w-[252px] md:max-w-[466px] leading-[24px] lg:leading-[46px] mt-[20px] lg:mt-[28px]">
-                  Reduce costs and future-proof your business in less than a minute.
+                  <?php
+                  // Get settings
+                  $settings = get_option('bh_theme_settings');
+                  $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                  // --- Field: Hero slide 5 Pera (hero_slide_5_pera) ---
+                  $val = '';
+                  foreach ($fields as $f) {
+                    if ($f['name'] === 'hero_slide_5_pera') {
+                      $val = $f['value'];
+                      break;
+                    }
+                  }
+                  if ($val) {
+                    echo wp_kses_post($val);
+                  }
+                  ?>
                 </p>
-                <a href="#"
-                  class="bg-accent text-dark text-sm lg:text-base font-extrabold leading-none inline-flex flex-row justify-between items-center gap-6 lg:gap-[46px] min-h-[42px] lg:min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white mt-[30px] lg:mt-[52px] shadow-xl"><span>See
+                <a href="<?php
+                // Get settings
+                $settings = get_option('bh_theme_settings');
+                $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                // --- Field: Hero slide 5 Link (hero_slide_5_link) ---
+                $val = '';
+                foreach ($fields as $f) {
+                  if ($f['name'] === 'hero_slide_5_link') {
+                    $val = $f['value'];
+                    break;
+                  }
+                }
+                if ($val) {
+                  echo esc_url($val);
+                }
+                ?>" class="bg-accent text-dark text-sm lg:text-base font-extrabold leading-none inline-flex flex-row justify-between items-center gap-6 lg:gap-[46px] min-h-[42px] lg:min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white mt-[30px] lg:mt-[52px] shadow-xl"><span>See
                     what you could save</span> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14"
                     fill="none" viewBox="0 0 12 14" class="max-w-[7px] lg:max-w-[10px]">
                     <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
@@ -199,8 +435,87 @@ get_header(); ?>
             </div>
 
           </li>
+          <!-- SLIDE 6 -->
+          <li
+            class="splide__slide relative w-full min-h-[570px] lg:min-h-[872px] lg:h-screen flex items-center overflow-hidden herobg-six">
 
 
+            <!-- CONTENT CONTAINER (Left Side) -->
+            <div
+              class="lg:max-w-[1444px] w-full mx-auto px-0 lg:px-[25px] relative z-10 h-full flex flex-col justify-end md:justify-center gap-[30px]">
+              <div class="w-full lg:w-1/2 text-white px-[25px] md:px-0 pt-[111px] md:pt-0">
+                <h1
+                  class="text-[30px] lg:text-[36px] xl:text-[44px] font-bold leading-[36px] lg:leading-[58px] lg:max-w-[491px]">
+                  <?php
+                  // Get settings
+                  $settings = get_option('bh_theme_settings');
+                  $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                  // --- Field: Hero slide 6 Title (hero_slide_6_title) ---
+                  $val = '';
+                  foreach ($fields as $f) {
+                    if ($f['name'] === 'hero_slide_6_title') {
+                      $val = $f['value'];
+                      break;
+                    }
+                  }
+                  if ($val) {
+                    echo wp_kses_post($val);
+                  }
+                  ?>
+                </h1>
+
+                <p
+                  class="text-white text-[18px] lg:text-[24px] xl:text-[32px] font-normal lg:font-bold max-w-[252px] md:max-w-[466px] leading-[24px] lg:leading-[46px] mt-[20px] lg:mt-[28px]">
+                  <?php
+                  // Get settings
+                  $settings = get_option('bh_theme_settings');
+                  $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                  // --- Field: Hero slide 6 Pera (hero_slide_6_pera) ---
+                  $val = '';
+                  foreach ($fields as $f) {
+                    if ($f['name'] === 'hero_slide_6_pera') {
+                      $val = $f['value'];
+                      break;
+                    }
+                  }
+                  if ($val) {
+                    echo wp_kses_post($val);
+                  }
+                  ?>
+                </p>
+                <a href="<?php
+                // Get settings
+                $settings = get_option('bh_theme_settings');
+                $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                // --- Field: Hero slide 6 Link (hero_slide_6_link) ---
+                $val = '';
+                foreach ($fields as $f) {
+                  if ($f['name'] === 'hero_slide_6_link') {
+                    $val = $f['value'];
+                    break;
+                  }
+                }
+                if ($val) {
+                  echo esc_url($val);
+                }
+                ?>" class="bg-accent text-dark text-sm lg:text-base font-extrabold leading-none inline-flex flex-row justify-between items-center gap-6 lg:gap-[46px] min-h-[42px] lg:min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white mt-[30px] lg:mt-[52px] shadow-xl"><span>See
+                    what you could save</span> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14"
+                    fill="none" viewBox="0 0 12 14" class="max-w-[7px] lg:max-w-[10px]">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                      d="m1 1 8.534 4.655a1 1 0 0 1 .068 1.714L1 13" />
+                  </svg>
+                </a>
+              </div>
+              <div class="w-full lg:w-1/2 md:hidden block min-h-[312px]">
+                <img src="<?php echo esc_url(get_theme_file_uri('assets/media/hero-md-6.png')); ?>" alt="hero image"
+                  class="w-full h-full object-cover">
+              </div>
+            </div>
+
+          </li>
         </ul>
       </div>
     </div>
@@ -275,17 +590,84 @@ get_header(); ?>
     <div class="w-full lg:max-w-[1444px] lg:px-0 px-[25px] mx-auto">
       <h2
         class="lg:max-w-[944px] text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-secondary mx-auto text-center leading-tight">
-        Thousands
-        of UK businesses trust us to help them save money - here’s why</h2>
+        <?php
+        // Get settings
+        $settings = get_option('bh_theme_settings');
+        $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
 
-      <div class="mt-[46px] lg:mt-[140px]">
-        <h4 class="text-sm lg:text-lg xl:text-xl text-yellow font-extrabold text-center">HOW DOES IT WORK?</h4>
+        // --- Field: Work First Big Title (work_first_big_title) ---
+        $val = '';
+        foreach ($fields as $f) {
+          if ($f['name'] === 'work_first_big_title') {
+            $val = $f['value'];
+            break;
+          }
+        }
+        if ($val) {
+          echo '<div class="work_first_big_title">' . wp_kses_post($val) . '</div>';
+        }
+        ?>
+      </h2>
+
+      <div class="mt-[46px] lg:mt-[140px] flex flex-col items-center">
+        <h4 class="text-sm lg:text-lg xl:text-xl text-yellow font-extrabold text-center">
+          <?php
+          // Get settings
+          $settings = get_option('bh_theme_settings');
+          $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+          // --- Field: HOW DOES IT WORK? (how_does_it_work) ---
+          $val = '';
+          foreach ($fields as $f) {
+            if ($f['name'] === 'how_does_it_work') {
+              $val = $f['value'];
+              break;
+            }
+          }
+          if ($val) {
+            echo '<div class="how_does_it_work">' . wp_kses_post($val) . '</div>';
+          }
+          ?>
+        </h4>
         <h3
           class="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-secondary mx-auto text-center leading-none py-4">
-          It’s as simple as 1,
-          2, 3.</h3>
-        <p class="text-base text-dark mx-auto text-center font-semibold">Let our trusted partners find the best telecoms
-          solutions and pricing for you.</p>
+          <?php
+          // Get settings
+          $settings = get_option('bh_theme_settings');
+          $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+          // --- Field: Work Main Title (work_main_title) ---
+          $val = '';
+          foreach ($fields as $f) {
+            if ($f['name'] === 'work_main_title') {
+              $val = $f['value'];
+              break;
+            }
+          }
+          if ($val) {
+            echo '<div class="work_main_title">' . wp_kses_post($val) . '</div>';
+          }
+          ?>
+        </h3>
+        <p class="text-base text-dark mx-auto text-center font-semibold">
+          <?php
+          // Get settings
+          $settings = get_option('bh_theme_settings');
+          $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+          // --- Field: Work Main Pera (work_main_pera) ---
+          $val = '';
+          foreach ($fields as $f) {
+            if ($f['name'] === 'work_main_pera') {
+              $val = $f['value'];
+              break;
+            }
+          }
+          if ($val) {
+            echo wp_kses_post($val);
+          }
+          ?>
+        </p>
       </div>
 
       <div class="flex flex-col lg:flex-row justify-between items-end gap-[50px] mt-6 lg:mt-[14px]">
@@ -293,26 +675,107 @@ get_header(); ?>
           <ul class="flex flex-col gap-[30px] lg:gap-[70px] lg:mb-[70px]">
             <li class="flex flex-row items-center gap-[30px] lg:gap-[42px]"><span
                 class="min-w-[72px] min-h-[72px] flex items-center justify-center text-white text-[40px] font-bold bg-green rounded-full">1</span>
-              <p class="text-lg lg:text-xl font-semibold lg:font-bold text-dark md:w-[338px]">Answer a few simple
-                questions about your business.</p>
+              <p class="text-lg lg:text-xl font-semibold lg:font-bold text-dark md:w-[338px]">
+                <?php
+                // Get settings
+                $settings = get_option('bh_theme_settings');
+                $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                // --- Field: Work Left List One (work_left_list_one) ---
+                $val = '';
+                foreach ($fields as $f) {
+                  if ($f['name'] === 'work_left_list_one') {
+                    $val = $f['value'];
+                    break;
+                  }
+                }
+                if ($val) {
+                  echo wp_kses_post($val);
+                }
+                ?>
+              </p>
             </li>
             <li class="flex flex-row items-center gap-[30px] lg:gap-[42px]"><span
                 class="min-w-[72px] min-h-[72px] flex items-center justify-center text-white text-[40px] font-bold bg-green rounded-full">2</span>
-              <p class="text-lg lg:text-xl font-semibold lg:font-bold text-dark md:w-[417px]">Sit back and wait for The
-                Business Hub to search the
-                whole market.</p>
+              <p class="text-lg lg:text-xl font-semibold lg:font-bold text-dark md:w-[417px]">
+                <?php
+                // Get settings
+                $settings = get_option('bh_theme_settings');
+                $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                // --- Field: Work Left List Two (work_left_list_two) ---
+                $val = '';
+                foreach ($fields as $f) {
+                  if ($f['name'] === 'work_left_list_two') {
+                    $val = $f['value'];
+                    break;
+                  }
+                }
+                if ($val) {
+                  echo wp_kses_post($val);
+                }
+                ?>
+              </p>
             </li>
             <li class="flex flex-row items-center gap-[30px] lg:gap-[42px]"><span
                 class="min-w-[72px] min-h-[72px] flex items-center justify-center text-white text-[40px] font-bold bg-green rounded-full">3</span>
-              <p class="text-lg lg:text-xl font-semibold lg:font-bold text-dark md:w-[397px]">Receive the best options
-                for your specific business
-                needs.</p>
+              <p class="text-lg lg:text-xl font-semibold lg:font-bold text-dark md:w-[397px]">
+                <?php
+                // Get settings
+                $settings = get_option('bh_theme_settings');
+                $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                // --- Field: Work Left List Two (work_left_list_two) ---
+                $val = '';
+                foreach ($fields as $f) {
+                  if ($f['name'] === 'work_left_list_two') {
+                    $val = $f['value'];
+                    break;
+                  }
+                }
+                if ($val) {
+                  echo wp_kses_post($val);
+                }
+                ?>
+              </p>
             </li>
           </ul>
-          <a href="#"
-            class="bg-accent text-dark text-base font-extrabold leading-none hidden lg:inline-flex flex-row justify-between items-center gap-[46px] min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white "><span>Start
-              saving today</span> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" fill="none"
-              viewBox="0 0 12 14">
+          <a href="<?php
+          // Get settings
+          $settings = get_option('bh_theme_settings');
+          $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+          // --- Field: Work Button Url (work_button_text_copy) ---
+          $val = '';
+          foreach ($fields as $f) {
+            if ($f['name'] === 'work_button_text_copy') {
+              $val = $f['value'];
+              break;
+            }
+          }
+          if ($val) {
+            echo esc_url($val);
+          }
+          ?>"
+            class="bg-accent text-dark text-base font-extrabold leading-none hidden lg:inline-flex flex-row justify-between items-center gap-[46px] min-h-[60px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white "><span>
+              <?php
+              // Get settings
+              $settings = get_option('bh_theme_settings');
+              $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+              // --- Field: Work Button Text (work_button_text) ---
+              $val = '';
+              foreach ($fields as $f) {
+                if ($f['name'] === 'work_button_text') {
+                  $val = $f['value'];
+                  break;
+                }
+              }
+              if ($val) {
+                echo wp_kses_post($val);
+              }
+              ?>
+            </span> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" fill="none" viewBox="0 0 12 14">
               <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
                 d="m1 1 8.534 4.655a1 1 0 0 1 .068 1.714L1 13" />
             </svg>
@@ -330,16 +793,62 @@ get_header(); ?>
     <div class="w-full lg:max-w-[1444px] px-[25px] mx-auto">
       <div class="">
         <h4 class="text-sm lg:text-lg xl:text-xl text-yellow font-extrabold text-center">
-          WHAT WE DO
+          <?php
+          // Get settings
+          $settings = get_option('bh_theme_settings');
+          $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+          // --- Field: WHAT WE DO (what_we_do) ---
+          $val = '';
+          foreach ($fields as $f) {
+            if ($f['name'] === 'what_we_do') {
+              $val = $f['value'];
+              break;
+            }
+          }
+          if ($val) {
+            echo wp_kses_post($val);
+          }
+          ?>
         </h4>
         <h3
           class="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-dark mx-auto text-center leading-tight lg:leading-none pt-4 pb-[30px] lg:pt-6 lg:pb-[51px]">
-          We help your business run efficiently and save money
+          <?php
+          // Get settings
+          $settings = get_option('bh_theme_settings');
+          $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+          // --- Field: Services Title (services_title) ---
+          $val = '';
+          foreach ($fields as $f) {
+            if ($f['name'] === 'services_title') {
+              $val = $f['value'];
+              break;
+            }
+          }
+          if ($val) {
+            echo wp_kses_post($val);
+          }
+          ?>
         </h3>
         <p class="text-base text-dark mx-auto text-center font-semibold max-w-[1006px]">
-          The Business Hub compares business telecom and IT services quickly and
-          efficiently. By only working with award-winning UK based suppliers, we
-          have access to exclusive discounts that we can pass on to you.
+          <?php
+          // Get settings
+          $settings = get_option('bh_theme_settings');
+          $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+          // --- Field: Services Pera (services_pera) ---
+          $val = '';
+          foreach ($fields as $f) {
+            if ($f['name'] === 'services_pera') {
+              $val = $f['value'];
+              break;
+            }
+          }
+          if ($val) {
+            echo wp_kses_post($val);
+          }
+          ?>
         </p>
       </div>
       <!-- Updated Service Grid with Smoother Transitions -->
@@ -359,14 +868,64 @@ get_header(); ?>
             <div>
               <h3
                 class="text-xl text-white font-extrabold group-hover:text-accent leading-none transition-colors duration-300">
-                Business Mobiles
+                <?php
+                // Get settings
+                $settings = get_option('bh_theme_settings');
+                $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                // --- Field: Service Card 1 Title (service_card_1_title) ---
+                $val = '';
+                foreach ($fields as $f) {
+                  if ($f['name'] === 'service_card_1_title') {
+                    $val = $f['value'];
+                    break;
+                  }
+                }
+                if ($val) {
+                  echo wp_kses_post($val);
+                }
+                ?>
               </h3>
               <p class="text-sm text-white font-semibold mt-5 transition-opacity duration-300">
-                Find the best network and contract in seconds.
+                <?php
+                // Get settings
+                $settings = get_option('bh_theme_settings');
+                $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                // --- Field: Service Card 1 Pera (service_card_1_pera) ---
+                $val = '';
+                foreach ($fields as $f) {
+                  if ($f['name'] === 'service_card_1_pera') {
+                    $val = $f['value'];
+                    break;
+                  }
+                }
+                if ($val) {
+                  echo wp_kses_post($val);
+                }
+                ?>
               </p>
             </div>
             <div class="mt-auto pt-4">
-              <a href="<?php echo site_url('/business-mobile'); ?>"
+              <a href="
+              <?php
+              // Get settings
+              $settings = get_option('bh_theme_settings');
+              $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+              // --- Field: Service Card 1 Link (service_card_1_link) ---
+              $val = '';
+              foreach ($fields as $f) {
+                if ($f['name'] === 'service_card_1_link') {
+                  $val = $f['value'];
+                  break;
+                }
+              }
+              if ($val) {
+                echo esc_url($val);
+              }
+              ?>
+              "
                 class="bg-accent text-dark text-base font-extrabold leading-none inline-flex flex-row justify-center items-center gap-[10px] min-h-[48px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white hover:scale-105 transform">
                 <span>Get started</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" fill="none" viewBox="0 0 12 14"
@@ -393,14 +952,63 @@ get_header(); ?>
             <div>
               <h3
                 class="text-xl text-white font-extrabold group-hover:text-accent leading-none transition-colors duration-300">
-                Business Phone System
+                <?php
+                // Get settings
+                $settings = get_option('bh_theme_settings');
+                $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                // --- Field: Service Card 2 Title (service_card_2_title) ---
+                $val = '';
+                foreach ($fields as $f) {
+                  if ($f['name'] === 'service_card_2_title') {
+                    $val = $f['value'];
+                    break;
+                  }
+                }
+                if ($val) {
+                  echo wp_kses_post($val);
+                }
+                ?>
               </h3>
               <p class="text-sm text-white font-semibold mt-5 transition-opacity duration-300">
-                With the 2027 switch off on the horizon, find the right system for your business.
+                <?php
+                // Get settings
+                $settings = get_option('bh_theme_settings');
+                $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                // --- Field: Service Card 2 Pera (service_card_2_pera) ---
+                $val = '';
+                foreach ($fields as $f) {
+                  if ($f['name'] === 'service_card_2_pera') {
+                    $val = $f['value'];
+                    break;
+                  }
+                }
+                if ($val) {
+                  echo wp_kses_post($val);
+                }
+                ?>
               </p>
             </div>
             <div class="mt-auto pt-4">
-              <a href="#"
+              <a href="
+              <?php
+              // Get settings
+              $settings = get_option('bh_theme_settings');
+              $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+              // --- Field: Service Card 2 Link (service_card_2_link) ---
+              $val = '';
+              foreach ($fields as $f) {
+                if ($f['name'] === 'service_card_2_link') {
+                  $val = $f['value'];
+                  break;
+                }
+              }
+              if ($val) {
+                echo esc_url($val);
+              }
+              ?>"
                 class="bg-accent text-dark text-base font-extrabold leading-none inline-flex flex-row justify-center items-center gap-[10px] min-h-[48px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white hover:scale-105 transform">
                 <span>Get started</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" fill="none" viewBox="0 0 12 14"
@@ -427,14 +1035,63 @@ get_header(); ?>
             <div>
               <h3
                 class="text-xl text-white font-extrabold group-hover:text-accent leading-none transition-colors duration-300">
-                Broadband
+                <?php
+                // Get settings
+                $settings = get_option('bh_theme_settings');
+                $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                // --- Field: Service Card 3 Title (service_card_3_title) ---
+                $val = '';
+                foreach ($fields as $f) {
+                  if ($f['name'] === 'service_card_3_title') {
+                    $val = $f['value'];
+                    break;
+                  }
+                }
+                if ($val) {
+                  echo wp_kses_post($val);
+                }
+                ?>
               </h3>
               <p class="text-sm text-white font-semibold mt-5 transition-opacity duration-300">
-                Get online securely with the best business broadband solutions.
+                <?php
+                // Get settings
+                $settings = get_option('bh_theme_settings');
+                $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                // --- Field: Service Card 3 Pera (service_card_3_pera) ---
+                $val = '';
+                foreach ($fields as $f) {
+                  if ($f['name'] === 'service_card_3_pera') {
+                    $val = $f['value'];
+                    break;
+                  }
+                }
+                if ($val) {
+                  echo wp_kses_post($val);
+                }
+                ?>
               </p>
             </div>
             <div class="mt-auto pt-4">
-              <a href="#"
+              <a href="
+              <?php
+              // Get settings
+              $settings = get_option('bh_theme_settings');
+              $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+              // --- Field: Service Card 3 Link (service_card_3_link) ---
+              $val = '';
+              foreach ($fields as $f) {
+                if ($f['name'] === 'service_card_3_link') {
+                  $val = $f['value'];
+                  break;
+                }
+              }
+              if ($val) {
+                echo esc_url($val);
+              }
+              ?>"
                 class="bg-accent text-dark text-base font-extrabold leading-none inline-flex flex-row justify-center items-center gap-[10px] min-h-[48px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white hover:scale-105 transform">
                 <span>Get started</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" fill="none" viewBox="0 0 12 14"
@@ -461,14 +1118,62 @@ get_header(); ?>
             <div>
               <h3
                 class="text-xl text-white font-extrabold group-hover:text-accent leading-none transition-colors duration-300">
-                IT managed services
+                <?php
+                // Get settings
+                $settings = get_option('bh_theme_settings');
+                $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                // --- Field: Service Card 4 Title (service_card_4_title) ---
+                $val = '';
+                foreach ($fields as $f) {
+                  if ($f['name'] === 'service_card_4_title') {
+                    $val = $f['value'];
+                    break;
+                  }
+                }
+                if ($val) {
+                  echo wp_kses_post($val);
+                }
+                ?>
               </h3>
               <p class="text-sm text-white font-semibold mt-5 transition-opacity duration-300">
-                Need to improve efficiency, reduce costs and ensure reliable, secure technology infrastructure?
+                <?php
+                // Get settings
+                $settings = get_option('bh_theme_settings');
+                $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                // --- Field: Service Card 4 Pera (service_card_4_pera) ---
+                $val = '';
+                foreach ($fields as $f) {
+                  if ($f['name'] === 'service_card_4_pera') {
+                    $val = $f['value'];
+                    break;
+                  }
+                }
+                if ($val) {
+                  echo wp_kses_post($val);
+                }
+                ?>
               </p>
             </div>
             <div class="mt-auto pt-4">
-              <a href="#"
+              <a href="<?php
+              // Get settings
+              $settings = get_option('bh_theme_settings');
+              $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+              // --- Field: Service Card 4 Link (service_card_4_link) ---
+              $val = '';
+              foreach ($fields as $f) {
+                if ($f['name'] === 'service_card_4_link') {
+                  $val = $f['value'];
+                  break;
+                }
+              }
+              if ($val) {
+                echo esc_url($val);
+              }
+              ?>"
                 class="bg-accent text-dark text-base font-extrabold leading-none inline-flex flex-row justify-center items-center gap-[10px] min-h-[48px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white hover:scale-105 transform">
                 <span>Get started</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" fill="none" viewBox="0 0 12 14"
@@ -513,14 +1218,62 @@ get_header(); ?>
                   <div>
                     <h3
                       class="text-xl text-white font-extrabold group-hover:text-accent leading-none transition-colors duration-300">
-                      Business Mobiles
+                      <?php
+                      // Get settings
+                      $settings = get_option('bh_theme_settings');
+                      $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                      // --- Field: Service Card 1 Title (service_card_1_title) ---
+                      $val = '';
+                      foreach ($fields as $f) {
+                        if ($f['name'] === 'service_card_1_title') {
+                          $val = $f['value'];
+                          break;
+                        }
+                      }
+                      if ($val) {
+                        echo wp_kses_post($val);
+                      }
+                      ?>
                     </h3>
                     <p class="text-sm text-white font-semibold mt-5 transition-opacity duration-300">
-                      Find the best network and contract in seconds.
+                      <?php
+                      // Get settings
+                      $settings = get_option('bh_theme_settings');
+                      $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                      // --- Field: Service Card 1 Pera (service_card_1_pera) ---
+                      $val = '';
+                      foreach ($fields as $f) {
+                        if ($f['name'] === 'service_card_1_pera') {
+                          $val = $f['value'];
+                          break;
+                        }
+                      }
+                      if ($val) {
+                        echo wp_kses_post($val);
+                      }
+                      ?>
                     </p>
                   </div>
                   <div class="mt-auto pt-4">
-                    <a href="/business-mobile"
+                    <a href="<?php
+                    // Get settings
+                    $settings = get_option('bh_theme_settings');
+                    $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                    // --- Field: Service Card 1 Link (service_card_1_link) ---
+                    $val = '';
+                    foreach ($fields as $f) {
+                      if ($f['name'] === 'service_card_1_link') {
+                        $val = $f['value'];
+                        break;
+                      }
+                    }
+                    if ($val) {
+                      echo esc_url($val);
+                    }
+                    ?>"
                       class="bg-accent text-dark text-base font-extrabold leading-none inline-flex flex-row justify-center items-center gap-[10px] min-h-[48px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white hover:scale-105 transform">
                       <span>Get started</span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" fill="none" viewBox="0 0 12 14"
@@ -549,14 +1302,63 @@ get_header(); ?>
                   <div>
                     <h3
                       class="text-xl text-white font-extrabold group-hover:text-accent leading-none transition-colors duration-300">
-                      Business Phone System
+                      <?php
+                      // Get settings
+                      $settings = get_option('bh_theme_settings');
+                      $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                      // --- Field: Service Card 2 Title (service_card_2_title) ---
+                      $val = '';
+                      foreach ($fields as $f) {
+                        if ($f['name'] === 'service_card_2_title') {
+                          $val = $f['value'];
+                          break;
+                        }
+                      }
+                      if ($val) {
+                        echo wp_kses_post($val);
+                      }
+                      ?>
                     </h3>
                     <p class="text-sm text-white font-semibold mt-5 transition-opacity duration-300">
-                      With the 2027 switch off on the horizon, find the right system for your business.
+                      <?php
+                      // Get settings
+                      $settings = get_option('bh_theme_settings');
+                      $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                      // --- Field: Service Card 2 Pera (service_card_2_pera) ---
+                      $val = '';
+                      foreach ($fields as $f) {
+                        if ($f['name'] === 'service_card_2_pera') {
+                          $val = $f['value'];
+                          break;
+                        }
+                      }
+                      if ($val) {
+                        echo wp_kses_post($val);
+                      }
+                      ?>
                     </p>
                   </div>
                   <div class="mt-auto pt-4">
-                    <a href="#"
+                    <a href="
+                    <?php
+                    // Get settings
+                    $settings = get_option('bh_theme_settings');
+                    $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                    // --- Field: Service Card 2 Link (service_card_2_link) ---
+                    $val = '';
+                    foreach ($fields as $f) {
+                      if ($f['name'] === 'service_card_2_link') {
+                        $val = $f['value'];
+                        break;
+                      }
+                    }
+                    if ($val) {
+                      echo esc_url($val);
+                    }
+                    ?>"
                       class="bg-accent text-dark text-base font-extrabold leading-none inline-flex flex-row justify-center items-center gap-[10px] min-h-[48px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white hover:scale-105 transform">
                       <span>Get started</span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" fill="none" viewBox="0 0 12 14"
@@ -585,14 +1387,62 @@ get_header(); ?>
                   <div>
                     <h3
                       class="text-xl text-white font-extrabold group-hover:text-accent leading-none transition-colors duration-300">
-                      Broadband
+                      <?php
+                      // Get settings
+                      $settings = get_option('bh_theme_settings');
+                      $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                      // --- Field: Service Card 3 Title (service_card_3_title) ---
+                      $val = '';
+                      foreach ($fields as $f) {
+                        if ($f['name'] === 'service_card_3_title') {
+                          $val = $f['value'];
+                          break;
+                        }
+                      }
+                      if ($val) {
+                        echo wp_kses_post($val);
+                      }
+                      ?>
                     </h3>
                     <p class="text-sm text-white font-semibold mt-5 transition-opacity duration-300">
-                      Get online securely with the best business broadband solutions.
+                      <?php
+                      // Get settings
+                      $settings = get_option('bh_theme_settings');
+                      $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                      // --- Field: Service Card 3 Pera (service_card_3_pera) ---
+                      $val = '';
+                      foreach ($fields as $f) {
+                        if ($f['name'] === 'service_card_3_pera') {
+                          $val = $f['value'];
+                          break;
+                        }
+                      }
+                      if ($val) {
+                        echo wp_kses_post($val);
+                      }
+                      ?>
                     </p>
                   </div>
                   <div class="mt-auto pt-4">
-                    <a href="#"
+                    <a href="<?php
+                    // Get settings
+                    $settings = get_option('bh_theme_settings');
+                    $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                    // --- Field: Service Card 3 Link (service_card_3_link) ---
+                    $val = '';
+                    foreach ($fields as $f) {
+                      if ($f['name'] === 'service_card_3_link') {
+                        $val = $f['value'];
+                        break;
+                      }
+                    }
+                    if ($val) {
+                      echo wp_kses_post($val);
+                    }
+                    ?>"
                       class="bg-accent text-dark text-base font-extrabold leading-none inline-flex flex-row justify-center items-center gap-[10px] min-h-[48px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white hover:scale-105 transform">
                       <span>Get started</span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" fill="none" viewBox="0 0 12 14"
@@ -621,14 +1471,62 @@ get_header(); ?>
                   <div>
                     <h3
                       class="text-xl text-white font-extrabold group-hover:text-accent leading-none transition-colors duration-300">
-                      IT managed services
+                      <?php
+                      // Get settings
+                      $settings = get_option('bh_theme_settings');
+                      $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                      // --- Field: Service Card 4 Title (service_card_4_title) ---
+                      $val = '';
+                      foreach ($fields as $f) {
+                        if ($f['name'] === 'service_card_4_title') {
+                          $val = $f['value'];
+                          break;
+                        }
+                      }
+                      if ($val) {
+                        echo wp_kses_post($val);
+                      }
+                      ?>
                     </h3>
                     <p class="text-sm text-white font-semibold mt-5 transition-opacity duration-300">
-                      Need to improve efficiency, reduce costs and ensure reliable, secure technology infrastructure?
+                      <?php
+                      // Get settings
+                      $settings = get_option('bh_theme_settings');
+                      $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                      // --- Field: Service Card 4 Pera (service_card_4_pera) ---
+                      $val = '';
+                      foreach ($fields as $f) {
+                        if ($f['name'] === 'service_card_4_pera') {
+                          $val = $f['value'];
+                          break;
+                        }
+                      }
+                      if ($val) {
+                        echo wp_kses_post($val);
+                      }
+                      ?>
                     </p>
                   </div>
                   <div class="mt-auto pt-4">
-                    <a href="#"
+                    <a href="<?php
+                    // Get settings
+                    $settings = get_option('bh_theme_settings');
+                    $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+                    // --- Field: Service Card 4 Link (service_card_4_link) ---
+                    $val = '';
+                    foreach ($fields as $f) {
+                      if ($f['name'] === 'service_card_4_link') {
+                        $val = $f['value'];
+                        break;
+                      }
+                    }
+                    if ($val) {
+                      echo esc_url($val);
+                    }
+                    ?>"
                       class="bg-accent text-dark text-base font-extrabold leading-none inline-flex flex-row justify-center items-center gap-[10px] min-h-[48px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white hover:scale-105 transform">
                       <span>Get started</span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" fill="none" viewBox="0 0 12 14"
@@ -670,20 +1568,83 @@ get_header(); ?>
       </div>
       <div class="w-full lg:w-1/2 text-center lg:text-left">
         <h4 class="text-sm lg:text-lg xl:text-xl text-white font-extrabold">
-          ABOUT US
+          <?php
+          // Get settings
+          $settings = get_option('bh_theme_settings');
+          $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+          // --- Field: About us  (about_us) ---
+          $val = '';
+          foreach ($fields as $f) {
+            if ($f['name'] === 'about_us') {
+              $val = $f['value'];
+              break;
+            }
+          }
+          if ($val) {
+            echo wp_kses_post($val);
+          }
+          ?>
         </h4>
         <h2
           class="text-[28px] lg:text-[34px] xl:text-[40px] font-extrabold leading-[36px] lg:leading-tight text-white leading-tight pt-[15px] pb-[30px] lg:pb-[22px]">
-          We help businesses run better, for less
+          <?php
+          // Get settings
+          $settings = get_option('bh_theme_settings');
+          $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+          // --- Field: About us Title (about_us_title) ---
+          $val = '';
+          foreach ($fields as $f) {
+            if ($f['name'] === 'about_us_title') {
+              $val = $f['value'];
+              break;
+            }
+          }
+          if ($val) {
+            echo wp_kses_post($val);
+          }
+          ?>
         </h2>
         <p class="text-base text-white font-semibold max-w-[674px] leading-[26px]">
-          The Business Hub helps UK businesses streamline their telecoms and reduce spend - without the hassle. By only
-          working with award-winning UK based suppliers, we find the most competitive offers so that you can concentrate
-          on your business. We then connect you to the best option for your needs.
+          <?php
+          // Get settings
+          $settings = get_option('bh_theme_settings');
+          $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+          // --- Field: About us Pera (about_us_pera) ---
+          $val = '';
+          foreach ($fields as $f) {
+            if ($f['name'] === 'about_us_pera') {
+              $val = $f['value'];
+              break;
+            }
+          }
+          if ($val) {
+            echo wp_kses_post($val);
+          }
+          ?>
         </p>
 
         <div class="mt-[28px] lg:mt-[38px]">
-          <a href="#"
+          <a href="
+          <?php
+          // Get settings
+          $settings = get_option('bh_theme_settings');
+          $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+          // --- Field: About us Link (about_us_link) ---
+          $val = '';
+          foreach ($fields as $f) {
+            if ($f['name'] === 'about_us_link') {
+              $val = $f['value'];
+              break;
+            }
+          }
+          if ($val) {
+            echo esc_url($val);
+          }
+          ?>"
             class="bg-accent text-dark text-sm lg:text-base font-extrabold leading-none inline-flex flex-row justify-center items-center gap-5 lg:gap-[10px] min-h-[50px] rounded-full px-[34px] transition-all ease-in-out duration-300 hover:bg-dark hover:text-white shadow-xl"><span>See
               how we can help</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" fill="none" viewBox="0 0 12 14">
@@ -701,14 +1662,64 @@ get_header(); ?>
   <section class="pt-[53px] pb-[50px] lg:pt-10 lg:pb-[70px] bg-light-gray">
     <div class="w-full lg:max-w-[1200px] mx-auto px-[25px]">
       <div class="mb-[30px] lg:mb-[83px]">
-        <h4 class="text-sm lg:text-lg xl:text-xl text-yellow font-extrabold text-center">RESOURCES</h4>
-        <h3
+        <h4 class="text-sm lg:text-lg xl:text-xl text-yellow font-extrabold text-center">
+          <?php
+          // Get settings
+          $settings = get_option('bh_theme_settings');
+          $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+          // --- Field: RESOURCES (resources) ---
+          $val = '';
+          foreach ($fields as $f) {
+            if ($f['name'] === 'resources') {
+              $val = $f['value'];
+              break;
+            }
+          }
+          if ($val) {
+            echo wp_kses_post($val);
+          }
+          ?>
+        </h4>
+        <h2
           class="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-secondary mx-auto text-center leading-none pt-[15px] pb-[18px] lg:pt-[22px] lg:pb-[24px]">
-          Your
-          shortcut to smarter business decisions</h3>
+          <?php
+          // Get settings
+          $settings = get_option('bh_theme_settings');
+          $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+          // --- Field: Blog Title (blog_title) ---
+          $val = '';
+          foreach ($fields as $f) {
+            if ($f['name'] === 'blog_title') {
+              $val = $f['value'];
+              break;
+            }
+          }
+          if ($val) {
+            echo wp_kses_post($val);
+          }
+          ?>
+        </h2>
         <p class="text-base text-dark mx-auto text-center font-semibold max-w-[777px]">From the latest mobile network
-          information to the full fibre roll out, check out our resources to help keep your business telecoms run
-          smoothly.</p>
+          <?php
+          // Get settings
+          $settings = get_option('bh_theme_settings');
+          $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+          // --- Field: Blog Pera (blog_pera) ---
+          $val = '';
+          foreach ($fields as $f) {
+            if ($f['name'] === 'blog_pera') {
+              $val = $f['value'];
+              break;
+            }
+          }
+          if ($val) {
+            echo wp_kses_post($val);
+          }
+          ?>
+        </p>
       </div>
 
       <!-- 
@@ -851,14 +1862,62 @@ get_header(); ?>
     <div class="w-full lg:max-w-[1378px] lg:px-0 px-[25px] mx-auto">
       <div class="mb-[24px] lg:mb-[40px]">
         <h4 class="text-sm lg:text-lg xl:text-xl text-yellow font-extrabold text-center">
-          NEWSLETTER
+          <?php
+          // Get settings
+          $settings = get_option('bh_theme_settings');
+          $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+          // --- Field: NEWSLETTER (newsletter) ---
+          $val = '';
+          foreach ($fields as $f) {
+            if ($f['name'] === 'newsletter') {
+              $val = $f['value'];
+              break;
+            }
+          }
+          if ($val) {
+            echo wp_kses_post($val);
+          }
+          ?>
         </h4>
         <h3
           class="text-[28px] lg:text-[34px] xl:text-[45px] font-extrabold text-secondary mx-auto text-center leading-none pt-[10px] pb-[20px]">
-          Sign up to our newsletter
+          <?php
+          // Get settings
+          $settings = get_option('bh_theme_settings');
+          $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+          // --- Field: Newsletter Title (newsletter_title) ---
+          $val = '';
+          foreach ($fields as $f) {
+            if ($f['name'] === 'newsletter_title') {
+              $val = $f['value'];
+              break;
+            }
+          }
+          if ($val) {
+            echo wp_kses_post($val);
+          }
+          ?>
         </h3>
         <p class="text-base text-dark mx-auto text-center font-semibold max-w-[263px] lg:max-w-[777px]">
-          Stay updated with the latest news, insights and offers from The Business Hub.
+          <?php
+          // Get settings
+          $settings = get_option('bh_theme_settings');
+          $fields = isset($settings['front-page']) ? $settings['front-page'] : [];
+
+          // --- Field: Newsletter Pera (newsletter_pera) ---
+          $val = '';
+          foreach ($fields as $f) {
+            if ($f['name'] === 'newsletter_pera') {
+              $val = $f['value'];
+              break;
+            }
+          }
+          if ($val) {
+            echo wp_kses_post($val);
+          }
+          ?>
         </p>
       </div>
       <!-- Form Container -->

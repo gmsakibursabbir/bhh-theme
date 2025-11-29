@@ -50,7 +50,7 @@ function bh_newsletter_signup_handler()
     }
 
     // Destination
-    $to = 'info@manikmt.com'; // change if needed
+    $to = 'info@thebusinesshub.co.uk'; // change if needed
 
     // Combine full name for subject
     $fullName = trim($name . ' ' . $lastname);
@@ -146,6 +146,18 @@ function bh_enqueue_splide_assets()
 }
 add_action('wp_enqueue_scripts', 'bh_enqueue_splide_assets');
 
+require get_template_directory() . '/inc/template-functions.php';
+
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Theme Settings.
+ */
+require get_template_directory() . '/inc/theme-settings.php';
+
 // ----------------------------------------------------------------
 // QUOTE FORM HANDLER
 // ----------------------------------------------------------------
@@ -171,7 +183,7 @@ function bh_quote_form_handler()
     $phone = sanitize_text_field($_POST['contact_number'] ?? '');
 
     // 3. Prepare Email
-    $to = 'info@manikmt.com'; // Or get_option('admin_email');
+    $to = 'info@thebusinesshub.co.uk'; // Or get_option('admin_email');
     $subject = 'New Quote Request from ' . $biz_name;
 
     $message = "<h2>New Quote Request</h2>";
@@ -240,7 +252,7 @@ function bh_handle_quote_submission($request)
     }
 
     // 3. Prepare Email
-    $to = 'info@manikmt.com'; // Same as newsletter form
+    $to = 'info@thebusinesshub.co.uk'; // Same as newsletter form
     $subject = "New Quote Request from $firstName $lastName";
 
     $message = "New Quote Request Details:\n\n";

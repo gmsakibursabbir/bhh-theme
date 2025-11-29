@@ -146,13 +146,20 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+.herobg-six {
+  background-image: url("../assets/media/hero-xl-6.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 @media (max-width: 768px) {
   .herobg-one,
   .herobg-two,
   .herobg-three,
   .herobg-four,
-  .herobg-five {
+  .herobg-five,
+  .herobg-six {
     background: linear-gradient(
       135deg,
       #1d8a2e 0%,
