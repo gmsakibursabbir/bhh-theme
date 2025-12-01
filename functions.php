@@ -15,6 +15,9 @@ function boilerplate_load_assets()
 
 add_action('wp_enqueue_scripts', 'boilerplate_load_assets');
 
+// Include theme cleanup handler
+require_once get_template_directory() . '/inc/theme-cleanup.php';
+
 function boilerplate_add_support()
 {
     add_theme_support('title-tag');
@@ -116,14 +119,31 @@ add_action('admin_post_bh_email_test', function () {
 // facions
 function bh_add_favicons()
 {
-    $theme_uri = get_template_directory_uri() . '/assets/icons/';
-    ?>
-    <link rel="icon" href="<?php echo esc_url($theme_uri . 'favicon.ico'); ?>" sizes="any">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url($theme_uri . 'favicon-32x32.png'); ?>">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url($theme_uri . 'favicon-16x16.png'); ?>">
-    <link rel="apple-touch-icon" href="<?php echo esc_url($theme_uri . 'apple-touch-icon.png'); ?>">
-    <link rel="manifest" href="<?php echo esc_url($theme_uri . 'site.webmanifest'); ?>">
-    <?php
+    $settings = get_option('bh_theme_settings');
+    $favicon_url = '';
+    if (isset($settings['general']) && is_array($settings['general'])) {
+        foreach ($settings['general'] as $field) {
+            if ($field['name'] === 'site_favicon') {
+                $favicon_url = $field['value'];
+                break;
+            }
+        }
+    }
+
+    if ($favicon_url) {
+        echo '<link rel="icon" href="' . esc_url($favicon_url) . '" sizes="any">' . "\n";
+        echo '<link rel="apple-touch-icon" href="' . esc_url($favicon_url) . '">' . "\n";
+    } else {
+        // Fallback to theme assets
+        $theme_uri = get_template_directory_uri() . '/assets/icons/';
+        ?>
+        <link rel="icon" href="<?php echo esc_url($theme_uri . 'favicon.ico'); ?>" sizes="any">
+        <link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url($theme_uri . 'favicon-32x32.png'); ?>">
+        <link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url($theme_uri . 'favicon-16x16.png'); ?>">
+        <link rel="apple-touch-icon" href="<?php echo esc_url($theme_uri . 'apple-touch-icon.png'); ?>">
+        <link rel="manifest" href="<?php echo esc_url($theme_uri . 'site.webmanifest'); ?>">
+        <?php
+    }
 }
 add_action('wp_head', 'bh_add_favicons');
 

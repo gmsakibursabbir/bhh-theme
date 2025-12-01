@@ -1,22 +1,50 @@
 <div class="lemon-green-gradient">
   <div class="pt-10 pb-14 lg:pt-13.5 lg:pb-11 lg:max-w-[1444px] px-[25px] mx-auto">
     <div
-      class="flex flex-row  justify-between items-start flex-wrap lg:flex-nowrap gap-y-[36px] lg:gap-y-[0px]  lg:gap-x-[36px]">
+      class="flex flex-row  justify-between items-start flex-wrap lg:flex-nowrap gap-y-[36px] lg:gap-y-0  lg:gap-x-[36px]">
       <div class="w-full lg:w-3/5">
+        <?php
+        $settings = get_option('bh_theme_settings');
+        $logo_url = get_theme_file_uri('assets/media/business-hub-logo.svg'); // Default
+        if (isset($settings['general']) && is_array($settings['general'])) {
+          foreach ($settings['general'] as $field) {
+            if ($field['name'] === 'site_logo' && !empty($field['value'])) {
+              $logo_url = $field['value'];
+              break;
+            }
+          }
+        }
+        ?>
         <a href="<?php echo esc_url(home_url('/')); ?>">
-          <img src="<?php echo esc_url(get_theme_file_uri('assets/media/business-hub-logo.svg')); ?>"
+          <img src="<?php echo esc_url($logo_url); ?>"
             alt="business hub logo" class="w-[200px] lg:w-[288px]">
         </a>
         <p class="text-base font-extrabold text-white lg:max-w-[550px] xl:max-w-[709px] pt-6 lg:pt-[18px]">The Business
           Hub compares business
           telecom and IT services quickly and easily. We work with award-winning UK based suppliers with access to
           exclusive discounts and offers.</p>
+        <?php
+        // Get social media URLs from settings
+        $instagram_url = 'https://www.instagram.com/the-business-hub-essential-services'; // Default
+        $linkedin_url = 'https://www.linkedin.com/company/the-business-hub-essential-services'; // Default
+        
+        if (isset($settings['general']) && is_array($settings['general'])) {
+          foreach ($settings['general'] as $field) {
+            if ($field['name'] === 'social_instagram' && !empty($field['value'])) {
+              $instagram_url = $field['value'];
+            }
+            if ($field['name'] === 'social_linkedin' && !empty($field['value'])) {
+              $linkedin_url = $field['value'];
+            }
+          }
+        }
+        ?>
         <ul class="flex flex-row gap-[10px] pt-[18px] pb-[30px] lg:pb-[38px]">
-          <li><a href="https://www.linkedin.com/company/the-business-hub-essential-services"><img
+          <li><a href="<?php echo esc_url($instagram_url); ?>"><img
                 src="<?php echo esc_url(get_theme_file_uri('assets/media/instagram.svg')); ?>" alt="instagram"
                 class="w-[28px] h-[28px] lg:w-[35px] lg:h-[35px]"></a></li>
-          <li><a href="https://www.linkedin.com/company/the-business-hub-essential-services"><img
-                src="<?php echo esc_url(get_theme_file_uri('assets/media/linked.svg')); ?>" alt="instagram"
+          <li><a href="<?php echo esc_url($linkedin_url); ?>"><img
+                src="<?php echo esc_url(get_theme_file_uri('assets/media/linked.svg')); ?>" alt="linkedin"
                 class="w-[28px] h-[28px] lg:w-[35px] lg:h-[35px]"></a></li>
         </ul>
         <ul class="flex flex-col xl:flex-row xl:items-center gap-4 lg:gap-5">
@@ -55,7 +83,8 @@
           <li><a href="#newsletter" class="hover:text-[#FFDC46] transition-all ease-in-out duration-300">Contact us</a>
           </li>
         </ul>
-      </div>
+
+             </div>
       <div class="w-1/2 lg:w-1/5">
         <ul class="flex flex-col gap-y-4 lg:gap-y-8 text-white font-extrabold text-base ">
           <li><a href="/terms-conditions" class="hover:text-[#FFDC46] transition-all ease-in-out duration-300">Terms &

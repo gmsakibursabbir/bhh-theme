@@ -786,7 +786,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Initialize
 
-  // Enforce General Settings (Logo & Favicon)
+  // Enforce General Settings (Logo & Favicon & Social Links)
   if (!currentSettings["general"] || currentSettings["general"].length === 0) {
     currentSettings["general"] = [
       {
@@ -801,32 +801,58 @@ document.addEventListener("DOMContentLoaded", function () {
         type: "image",
         value: "",
       },
+      {
+        name: "social_instagram",
+        label: "Instagram URL",
+        type: "url",
+        value:
+          "https://www.linkedin.com/company/the-business-hub-essential-services",
+      },
+      {
+        name: "social_linkedin",
+        label: "LinkedIn URL",
+        type: "url",
+        value:
+          "https://www.linkedin.com/company/the-business-hub-essential-services",
+      },
     ];
   } else {
     // Ensure they exist even if data is present but partial
-    const hasLogo = currentSettings["general"].some(
-      (f) => f.name === "site_logo"
-    );
-    const hasFavicon = currentSettings["general"].some(
-      (f) => f.name === "site_favicon"
-    );
-
-    if (!hasLogo) {
-      currentSettings["general"].unshift({
+    const existingNames = currentSettings["general"].map((f) => f.name);
+    const requiredFields = [
+      {
         name: "site_logo",
         label: "Site Logo",
         type: "image",
         value: "",
-      });
-    }
-    if (!hasFavicon) {
-      currentSettings["general"].push({
+      },
+      {
         name: "site_favicon",
         label: "Site Favicon",
         type: "image",
         value: "",
-      });
-    }
+      },
+      {
+        name: "social_instagram",
+        label: "Instagram URL",
+        type: "url",
+        value:
+          "https://www.linkedin.com/company/the-business-hub-essential-services",
+      },
+      {
+        name: "social_linkedin",
+        label: "LinkedIn URL",
+        type: "url",
+        value:
+          "https://www.linkedin.com/company/the-business-hub-essential-services",
+      },
+    ];
+
+    requiredFields.forEach((field) => {
+      if (!existingNames.includes(field.name)) {
+        currentSettings["general"].push(field);
+      }
+    });
   }
 
   // Move Import Form to Tools Tab

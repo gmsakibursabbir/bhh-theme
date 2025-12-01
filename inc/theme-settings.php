@@ -125,6 +125,10 @@ function bh_render_theme_settings_page()
     ?>
     <div class="wrap bh-wrap">
         <h1 class="wp-heading-inline"><?php echo esc_html(get_admin_page_title()); ?></h1>
+        <a href="https://docsify-this.net/?basePath=https://raw.githubusercontent.com/gmsakibursabbir/bhh-theme/main&homepage=BH-SETTINGS-GUIDE.md&sidebar=true#/"
+            target="_blank" class="page-title-action" style="margin-left: 10px;">
+            <span class="dashicons dashicons-book-alt" style="margin-top: 4px;"></span> Documentation
+        </a>
         <hr class="wp-header-end">
 
         <div class="nav-tab-wrapper bh-nav-tab-wrapper">

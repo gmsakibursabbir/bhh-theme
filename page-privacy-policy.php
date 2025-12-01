@@ -141,9 +141,63 @@ get_header(); ?>
                         <h2>7. Contact Us</h2>
                         <p>If you have questions about this Privacy Policy or our data practices, please contact us:</p>
                         <div class="p-6 bg-light-gray rounded-xl mt-4">
-                            <p class="mb-2"><strong>Email:</strong> info@thebusinesshub.co.uk</p>
-                            <p class="mb-2"><strong>Phone:</strong> (123) 456-7890</p>
-                            <p><strong>Address:</strong> Your Business Address, City, State, ZIP</p>
+                            <p class="mb-2"><strong>Email:</strong>
+                                <?php
+                                // Get settings
+                                $settings = get_option('bh_theme_settings');
+                                $fields = isset($settings['28']) ? $settings['28'] : [];
+
+                                // --- Field: Email (email) ---
+                                $val = '';
+                                foreach ($fields as $f) {
+                                    if ($f['name'] === 'email') {
+                                        $val = $f['value'];
+                                        break;
+                                    }
+                                }
+                                if ($val) {
+                                    echo wp_kses_post($val);
+                                }
+                                ?>
+                            </p>
+                            <p class="mb-2"><strong>Phone:</strong>
+                                <?php
+                                // Get settings
+                                $settings = get_option('bh_theme_settings');
+                                $fields = isset($settings['28']) ? $settings['28'] : [];
+
+                                // --- Field: Phone (phone) ---
+                                $val = '';
+                                foreach ($fields as $f) {
+                                    if ($f['name'] === 'phone') {
+                                        $val = $f['value'];
+                                        break;
+                                    }
+                                }
+                                if ($val) {
+                                    echo wp_kses_post($val);
+                                }
+                                ?>
+                            </p>
+                            <p><strong>Address:</strong>
+                                <?php
+                                // Get settings
+                                $settings = get_option('bh_theme_settings');
+                                $fields = isset($settings['28']) ? $settings['28'] : [];
+
+                                // --- Field: Address (address) ---
+                                $val = '';
+                                foreach ($fields as $f) {
+                                    if ($f['name'] === 'address') {
+                                        $val = $f['value'];
+                                        break;
+                                    }
+                                }
+                                if ($val) {
+                                    echo wp_kses_post($val);
+                                }
+                                ?>
+                            </p>
                         </div>
                     </section>
 

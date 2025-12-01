@@ -559,7 +559,7 @@ get_header(); ?>
         </h2>
 
         <!-- infinite loop top -->
-        <div id="showcase-slider-top" class="splide splide-showcase infiniteloopsme block lg:hidden" data-config='<?php echo esc_attr(json_encode([
+        <div id="showcase-slider" class="splide splide-showcase infiniteloopsme block lg:hidden" data-config='<?php echo esc_attr(json_encode([
           "type" => "loop",
           "perPage" => 6,
           "gap" => "2rem",
@@ -592,28 +592,28 @@ get_header(); ?>
              2. Changed object-contain to object-cover (looks better for hero banners).
           -->
               <li class="splide__slide">
-                <img src="<?php echo esc_url(get_theme_file_uri('/assets/media/sc-01.png')); ?>" alt="show-case image 1"
-                  class="w-full h-[58px] object-contain" loading="lazy" />
+                <img src="<?php echo esc_url(get_theme_file_uri('/assets/media/sc-01.webp')); ?>"
+                  alt="show-case image 1" class="w-full h-[58px] object-contain" loading="lazy" />
               </li>
               <li class="splide__slide">
-                <img src="<?php echo esc_url(get_theme_file_uri('/assets/media/sc-02.png')); ?>" alt="show-case image 2"
-                  class="w-full h-[58px] object-contain" loading="lazy" />
+                <img src="<?php echo esc_url(get_theme_file_uri('/assets/media/sc-02.webp')); ?>"
+                  alt="show-case image 2" class="w-full h-[58px] object-contain" loading="lazy" />
               </li>
               <li class="splide__slide">
-                <img src="<?php echo esc_url(get_theme_file_uri('/assets/media/sc-03.png')); ?>" alt="show-case image 3"
-                  class="w-full h-[58px] object-contain" loading="lazy" />
+                <img src="<?php echo esc_url(get_theme_file_uri('/assets/media/sc-03.webp')); ?>"
+                  alt="show-case image 3" class="w-full h-[58px] object-contain" loading="lazy" />
               </li>
               <li class="splide__slide">
-                <img src="<?php echo esc_url(get_theme_file_uri('/assets/media/sc-04.png')); ?>" alt="show-case image 4"
-                  class="w-full h-[58px] object-contain" loading="lazy" />
+                <img src="<?php echo esc_url(get_theme_file_uri('/assets/media/sc-04.webp')); ?>"
+                  alt="show-case image 4" class="w-full h-[58px] object-contain" loading="lazy" />
               </li>
               <li class="splide__slide">
-                <img src="<?php echo esc_url(get_theme_file_uri('/assets/media/sc-05.png')); ?>" alt="show-case image 5"
-                  class="w-full h-[58px] object-contain" loading="lazy" />
+                <img src="<?php echo esc_url(get_theme_file_uri('/assets/media/sc-05.webp')); ?>"
+                  alt="show-case image 5" class="w-full h-[58px] object-contain" loading="lazy" />
               </li>
               <li class="splide__slide">
-                <img src="<?php echo esc_url(get_theme_file_uri('/assets/media/sc-06.png')); ?>" alt="show-case image 6"
-                  class="w-full h-[58px] object-contain" loading="lazy" />
+                <img src="<?php echo esc_url(get_theme_file_uri('/assets/media/sc-06.webp')); ?>"
+                  alt="show-case image 6" class="w-full h-[58px] object-contain" loading="lazy" />
               </li>
             </ul>
           </div>
@@ -649,7 +649,7 @@ get_header(); ?>
           ?>
 
         </h3>
-        <div id="showcase-slider" class="splide splide-showcase infiniteloopsme" data-config='<?php echo esc_attr(json_encode([
+        <div id="showcase-slider-bottom" class="splide splide-showcase infiniteloopsme" data-config='<?php echo esc_attr(json_encode([
           "type" => "loop",
           "perPage" => 6,
           "gap" => "2rem",
@@ -682,28 +682,28 @@ get_header(); ?>
              2. Changed object-contain to object-cover (looks better for hero banners).
           -->
               <li class="splide__slide">
-                <img src="<?php echo esc_url(get_theme_file_uri('/assets/media/sc-01.png')); ?>" alt="show-case image 1"
-                  class="w-full h-[58px] object-contain" loading="lazy" />
+                <img src="<?php echo esc_url(get_theme_file_uri('/assets/media/sc-01.webp')); ?>"
+                  alt="show-case image 1" class="w-full h-[58px] object-contain" loading="lazy" />
               </li>
               <li class="splide__slide">
-                <img src="<?php echo esc_url(get_theme_file_uri('/assets/media/sc-02.png')); ?>" alt="show-case image 2"
-                  class="w-full h-[58px] object-contain" loading="lazy" />
+                <img src="<?php echo esc_url(get_theme_file_uri('/assets/media/sc-02.webp')); ?>"
+                  alt="show-case image 2" class="w-full h-[58px] object-contain" loading="lazy" />
               </li>
               <li class="splide__slide">
-                <img src="<?php echo esc_url(get_theme_file_uri('/assets/media/sc-03.png')); ?>" alt="show-case image 3"
-                  class="w-full h-[58px] object-contain" loading="lazy" />
+                <img src="<?php echo esc_url(get_theme_file_uri('/assets/media/sc-03.webp')); ?>"
+                  alt="show-case image 3" class="w-full h-[58px] object-contain" loading="lazy" />
               </li>
               <li class="splide__slide">
-                <img src="<?php echo esc_url(get_theme_file_uri('/assets/media/sc-04.png')); ?>" alt="show-case image 4"
-                  class="w-full h-[58px] object-contain" loading="lazy" />
+                <img src="<?php echo esc_url(get_theme_file_uri('/assets/media/sc-04.webp')); ?>"
+                  alt="show-case image 4" class="w-full h-[58px] object-contain" loading="lazy" />
               </li>
               <li class="splide__slide">
-                <img src="<?php echo esc_url(get_theme_file_uri('/assets/media/sc-05.png')); ?>" alt="show-case image 5"
-                  class="w-full h-[58px] object-contain" loading="lazy" />
+                <img src="<?php echo esc_url(get_theme_file_uri('/assets/media/sc-05.webp')); ?>"
+                  alt="show-case image 5" class="w-full h-[58px] object-contain" loading="lazy" />
               </li>
               <li class="splide__slide">
-                <img src="<?php echo esc_url(get_theme_file_uri('/assets/media/sc-06.png')); ?>" alt="show-case image 6"
-                  class="w-full h-[58px] object-contain" loading="lazy" />
+                <img src="<?php echo esc_url(get_theme_file_uri('/assets/media/sc-06.webp')); ?>"
+                  alt="show-case image 6" class="w-full h-[58px] object-contain" loading="lazy" />
               </li>
             </ul>
           </div>
@@ -1334,10 +1334,10 @@ get_header(); ?>
 
                 <li class="splide__slide p-4">
                   <div
-                    class="bg-white rounded-[20px] lg:rounded-[30px] shadow-xl overflow-hidden flex flex-col lg:flex-row h-[714px] lg:h-[465px]">
+                    class="bg-white rounded-[20px] lg:rounded-[30px] shadow-xl overflow-hidden flex flex-col lg:flex-row max-h-[714px] lg:min-h-[465px]">
 
                     <!-- Left: Featured Image -->
-                    <div class="w-full lg:w-[45%] h-[376px] lg:h-[250px] lg:h-full relative">
+                    <div class="w-full lg:w-[45%] min-h-[250px] lg:min-h-full relative">
                       <img src="<?php echo esc_url($img_url); ?>" alt="<?php the_title_attribute(); ?>"
                         class="absolute inset-0 w-full h-full object-cover" />
                     </div>
